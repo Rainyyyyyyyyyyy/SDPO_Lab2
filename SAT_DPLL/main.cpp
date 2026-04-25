@@ -11,20 +11,28 @@
 #include "boolequation.h"
 #include "BBV.h"
 
-
+#include <QDebug>
+#include <QFileInfo>
 int main(int argc, char *argv[])
 {
 	QStringList full_file_list;
 	QList<QStringList> Elements;
-	std::string filepath;
+    QString filepath;//std::string filepath;
 	QStringList inputs;
+
+       QTextStream qin(stdin);
 	//std::cout << "Input file path...\n";
 	//std::cin >> filepath;
 	// Hardcode input
 	//	filepath = "sat_ex_2.pla";
-	//filepath = "Sat_ex11_3.pla";
-	filepath = "Sat_ex30_3.pla";
-	QFile file(QString::fromUtf8(filepath.c_str()));
+    //filepath = "Sat_ex11_3.pla";
+
+       // E:\Z_vsyakoe_dla_echeby\4k2sem\SEcure_Develop_PO(Andreeva)\laba2\(UserRelease)\SAT_DPLL\SatExamples\Sat_ex11_3.pla
+       do{
+            qDebug()<<"Enter path to example.pla";
+            qin>>filepath;  //filepath = "Sat_ex30_3.pla";
+       }while(QFileInfo::exists(filepath) == false);
+    QFile file(filepath);   //(QString::fromUtf8(filepath.c_str()));
 
 	//считываем весь файл
 	if ((file.exists()) && (file.open(QIODevice::ReadOnly))) {
