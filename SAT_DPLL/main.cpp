@@ -132,6 +132,11 @@ int main(int argc, char *argv[])
 							// Ветвление, создание новых узлов.
 
 							int indexBranching = currentEquation->ChooseColForBranching();
+							if (indexBranching < 0) {
+								BoolTree.pop();
+								flag = false;
+								break;
+							}
 
 							BoolEquation *Equation0 = new BoolEquation(*currentEquation);
 							BoolEquation *Equation1 = new BoolEquation(*currentEquation);
