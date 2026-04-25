@@ -8,6 +8,7 @@ CONFIG += c++17 cmdline
 
 SOURCES += \
         SAT_DPLL/BBV.cpp \
+        SAT_DPLL/branchingstrategy.cpp \
         SAT_DPLL/boolequation.cpp \
         SAT_DPLL/boolinterval.cpp \
         Allocator/Allocator.cpp \
@@ -15,6 +16,7 @@ SOURCES += \
 
 HEADERS += \
         SAT_DPLL/BBV.h \
+        SAT_DPLL/branchingstrategy.h \
         SAT_DPLL/boolequation.h \
         SAT_DPLL/boolinterval.h \
         SAT_DPLL/NodeBoolTree.h \
