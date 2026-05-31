@@ -11,166 +11,219 @@
 #include "boolequation.h"
 #include "BBV.h"
 
+#include <QDebug>
+#include <QFileInfo>
 
-int main(int argc, char *argv[])
-{
-	QStringList full_file_list;
-	QList<QStringList> Elements;
-	std::string filepath;
-	QStringList inputs;
-	//std::cout << "Input file path...\n";
-	//std::cin >> filepath;
-	// Hardcode input
-	//	filepath = "sat_ex_2.pla";
-	//filepath = "Sat_ex11_3.pla";
-	filepath = "Sat_ex30_3.pla";
-	QFile file(QString::fromUtf8(filepath.c_str()));
+#include <QCoreApplication>
 
-	//считываем весь файл
-	if ((file.exists()) && (file.open(QIODevice::ReadOnly))) {
-		while (!file.atEnd()) {
-			full_file_list << file.readLine().replace("\r\n", "");
-		}
 
-		int cnfSize = full_file_list.length();
-		BoolInterval **CNF = new BoolInterval*[cnfSize];
-		int rangInterval = -1; // error
+QTextStream qin(stdin);
 
-		if (cnfSize) {
-			rangInterval = full_file_list[0].toUtf8().trimmed().length();
-		}
+int askStrategy(){
 
-		for (int i = 0; i < cnfSize; i++) { // Заполняем массив
-			QString strv = full_file_list[i];
-			CNF[i] = new BoolInterval(strv.toUtf8().trimmed().data());
-		}
+    QString variant_strategy = 0;
+    do{
+        qDebug()<<"Enter variant of strategy";
+        qDebug()<<"1 - FirstFreeBranchingStrategy";
+        qDebug()<<"2 - LastFreeBranchingStrategy";
+        qDebug()<<"3 - MostContraintBranchingStrategy";
+        qin>>variant_strategy;
+    }while(variant_strategy != "1" && variant_strategy != "2" && variant_strategy != "3");
 
-		QString rootvec = "";
-		QString rootdnc = "";
+    return variant_strategy.toInt();
+}
 
-		//Строим интервал в которм все компоненты принимают значение '-',
-		//который представляет собой корень уравнения, пока пустой.
-		//В процессе поиска корня, компоненты интервала буду заменены на конкретные значения.
 
-		for (int i = 0; i < rangInterval; i++) {
-			rootvec += "0";
-			rootdnc += "1";
-		}
+int main(int argc, char *argv[]) {
 
-		QByteArray v = rootvec.toUtf8();
+//    QFileInfo ffaf("..");
+//    qDebug()<<ffaf.absoluteFilePath();
+//    return 0;
+    QCoreApplication qcoreappa(argc, argv);
+    qDebug()<<"localPath: "<<qcoreappa.applicationDirPath();
+    QStringList full_file_list;
+    QList<QStringList> Elements;
+    QString filepath;//std::string filepath;
+    QStringList inputs;
 
-		BBV vec(v.data());
-		QByteArray d = rootdnc.toUtf8();
-		BBV dnc(d.data());
+    QTextStream qin(stdin);
+    //std::cout << "Input file path...\n";
+    //std::cin >> filepath;
+    // Hardcode input
+    //	filepath = "sat_ex_2.pla";
+    //filepath = "Sat_ex11_3.pla";
 
-		// Создаем пустой корень уравнения;
-		BoolInterval *root = new BoolInterval(vec, dnc);
+    // ..\SDPO_Lab2\SAT_DPLL\SatExamples
+    // E:\Z_vsyakoe_dla_echeby\4k2sem\SEcure_Develop_PO(Andreeva)\laba2\(UserRelease)\SAT_DPLL\SatExamples\Sat_ex11_3.pla
+    do{
+        qDebug()<<"Enter path to example.pla";
+        qin>>filepath;  //filepath = "Sat_ex30_3.pla";
+    }while(QFileInfo::exists(filepath) == false);
+    QFile file(filepath);   //(QString::fromUtf8(filepath.c_str()));
 
-		BoolEquation *boolequation = new BoolEquation(CNF, root, cnfSize, cnfSize, vec);
+    //считываем весь файл
+    if ((file.exists()) && (file.open(QIODevice::ReadOnly))) {
+        while (!file.atEnd()) {
+            full_file_list << file.readLine().replace("\r\n", "");
+        }
 
-		// Алгоритм поиска корня. Работаем всегда с верхушкой стека.
-		// Шаг 1. Правила выполняются? Нет - Ветвление Шаг 5. Да - Упрощаем Шаг 2.
-		// Шаг 2. Строки закончились? Нет - Шаг1, Да - Корень найден? Да - Успех КОНЕЦ, Нет - Шаг 3.
-		// Шаг 3. Кол-во узлов в стеке > 1? Нет - Корня нет КОНЕЦ, Да - Шаг 4.
-		// Шаг 4. Текущий узел выталкиваем из стека, попадаем в новый узел. У нового узла lt rt отличны от NULL? Нет - Шаг 1. Да - Шаг 3.
-		// Шаг 5. Выбор компоненты ветвления, создание двух новых узлов, добавление их в стек сначала с 1 потом с 0. Шаг 1.
+        int cnfSize = full_file_list.length();
+        BoolInterval **CNF = new BoolInterval*[cnfSize];
+        int rangInterval = -1; // error
 
-		// Алгоритм CheckRules.
-		// Цикл по строкам КНФ.
-		// 1. Проверка правила 2. Выполнилось? Да - Корня нет, Нет - Идем дальше.
-		// 2. Проверка правила 1. Выполнилось? Да - Упрощаем, Нет - Идем дальше.
+        if (cnfSize) {
+            rangInterval = full_file_list[0].toUtf8().trimmed().length();
+        }
 
-		// Создаем стек под узлы булева дерева
-		// QStack<NodeBoolTree> BoolTree;
+        for (int i = 0; i < cnfSize; i++) { // Заполняем массив
+            QString strv = full_file_list[i];
+            CNF[i] = new BoolInterval(strv.toUtf8().trimmed().data());
+        }
 
-		bool rootIsFinded = false;
-		stack<NodeBoolTree *> BoolTree;
-		NodeBoolTree *startNode = new NodeBoolTree(boolequation);
-		BoolTree.push(startNode);
+        QString rootvec = "";
+        QString rootdnc = "";
 
-		do {
-			NodeBoolTree *currentNode(BoolTree.top());
+        //Строим интервал в которм все компоненты принимают значение '-',
+        //который представляет собой корень уравнения, пока пустой.
+        //В процессе поиска корня, компоненты интервала буду заменены на конкретные значения.
 
-			if (currentNode->lt == nullptr &&
-					currentNode->rt == nullptr) { // Если вернулись в обработанный узел
-				BoolEquation *currentEquation = currentNode->eq;
-				bool flag = true;
+        for (int i = 0; i < rangInterval; i++) {
+            rootvec += "0";
+            rootdnc += "1";
+        }
 
-				// Цикл для упрощения по правилам.
-				while (flag) {
-					int a = currentEquation->CheckRules(); // Проверка выполнения правил
+        QByteArray v = rootvec.toUtf8();
 
-					switch (a) {
-						case 0: { // Корня нет.
-							BoolTree.pop();
-							flag = false;
-							break;
-						}
+        BBV vec(v.data());
+        QByteArray d = rootdnc.toUtf8();
+        BBV dnc(d.data());
 
-						case 1: { // Правило выполнилось, корень найден или продолжаем упрощать.
-							if (currentEquation->count == 0 ||
-									currentEquation->mask.getWeight() ==
-									currentEquation->mask.getSize()) { // Если кончились строки или столбцы, корень найден.
-								flag = false;
-								rootIsFinded =
-									true; // Полагаем, что корень найден, выполняем проверку корня
+        // Создаем пустой корень уравнения;
+        BoolInterval *root = new BoolInterval(vec, dnc);
 
-								for (int i = 0; i < cnfSize; i++) {
+        BoolEquation *boolequation = new BoolEquation(CNF, root, cnfSize, cnfSize, vec);
+        std::shared_ptr<FirstFreeBranchingStrategy> St1 = std::make_shared<FirstFreeBranchingStrategy>();
+        std::shared_ptr<LastFreeBranchingStrategy> St2 = std::make_shared<LastFreeBranchingStrategy>();
+        std::shared_ptr<MostContraintBranchingStrategy> St3 = std::make_shared<MostContraintBranchingStrategy>();
 
-									if (!CNF[i]->isEqualComponent(*currentEquation->root)) {
-										rootIsFinded = false;//Корень не найден. Продолжаем искать дальше.
-										BoolTree.pop();
-										break;
-									}
-								}
-							}
+        int Entered_strategy = askStrategy();
 
-							break;
-						}
+        switch (Entered_strategy) {
+            case 1:  boolequation->SetBranchingStrategy(St1); break;
+            case 2:  boolequation->SetBranchingStrategy(St2); break;
+            case 3:  boolequation->SetBranchingStrategy(St3); break;
+            default: qDebug()<<"Unresolved variant. Setting 'FirstFreeBranchingStrategy'"; boolequation->SetBranchingStrategy(St1); break;
+        }
 
-						case 2: { // Правила не выполнились, ветвление.
-							// Ветвление, создание новых узлов.
 
-							int indexBranching = currentEquation->ChooseColForBranching();
+        // Алгоритм поиска корня. Работаем всегда с верхушкой стека.
+        // Шаг 1. Правила выполняются? Нет - Ветвление Шаг 5. Да - Упрощаем Шаг 2.
+        // Шаг 2. Строки закончились? Нет - Шаг1, Да - Корень найден? Да - Успех КОНЕЦ, Нет - Шаг 3.
+        // Шаг 3. Кол-во узлов в стеке > 1? Нет - Корня нет КОНЕЦ, Да - Шаг 4.
+        // Шаг 4. Текущий узел выталкиваем из стека, попадаем в новый узел. У нового узла lt rt отличны от NULL? Нет - Шаг 1. Да - Шаг 3.
+        // Шаг 5. Выбор компоненты ветвления, создание двух новых узлов, добавление их в стек сначала с 1 потом с 0. Шаг 1.
 
-							BoolEquation *Equation0 = new BoolEquation(*currentEquation);
-							BoolEquation *Equation1 = new BoolEquation(*currentEquation);
+        // Алгоритм CheckRules.
+        // Цикл по строкам КНФ.
+        // 1. Проверка правила 2. Выполнилось? Да - Корня нет, Нет - Идем дальше.
+        // 2. Проверка правила 1. Выполнилось? Да - Упрощаем, Нет - Идем дальше.
 
-							Equation0->Simplify(indexBranching, '0');
-							Equation1->Simplify(indexBranching, '1');
+        // Создаем стек под узлы булева дерева
+        // QStack<NodeBoolTree> BoolTree;
 
-							NodeBoolTree *Node0 = new NodeBoolTree(Equation0);
-							NodeBoolTree *Node1 = new NodeBoolTree(Equation1);
+        bool rootIsFinded = false;
+        stack<NodeBoolTree *> BoolTree;
+        NodeBoolTree *startNode = new NodeBoolTree(boolequation);
+        BoolTree.push(startNode);
 
-							currentNode->lt = Node0;
-							currentNode->rt = Node1;
+        do {
+            NodeBoolTree *currentNode(BoolTree.top());
 
-							BoolTree.push(Node1);
-							BoolTree.push(Node0);
+            if (currentNode->lt == nullptr &&
+                currentNode->rt == nullptr) { // Если вернулись в обработанный узел
+                BoolEquation *currentEquation = currentNode->eq;
+                bool flag = true;
 
-							flag = false;
-							break;
-						}
-					}
-				}
-			} else {
-				BoolTree.pop();
-			}
+                // Цикл для упрощения по правилам.
+                while (flag) {
+                    int a = currentEquation->CheckRules(); // Проверка выполнения правил
 
-		} while (BoolTree.size() > 1 && !rootIsFinded);
+                    switch (a) {
+                    case 0: { // Корня нет.
+                        BoolTree.pop();
+                        flag = false;
+                        break;
+                    }
 
-		if (rootIsFinded) {
-			cout << "Root is:\n ";
-			BoolInterval *finded_root = BoolTree.top()->eq->root;
-			cout << string(*finded_root);
-		} else {
-			cout << "Root is not exists!";
-		}
+                    case 1: { // Правило выполнилось, корень найден или продолжаем упрощать.
+                        if (currentEquation->count == 0 ||
+                            currentEquation->mask.getWeight() ==
+                                currentEquation->mask.getSize()) { // Если кончились строки или столбцы, корень найден.
+                            flag = false;
+                            rootIsFinded =
+                                true; // Полагаем, что корень найден, выполняем проверку корня
 
-	} else {
-		std::cout << "File does not exists.\n";
-	}
+                            for (int i = 0; i < cnfSize; i++) {
 
-	return 0;
+                                if (!CNF[i]->isEqualComponent(*currentEquation->root)) {
+                                    rootIsFinded = false;//Корень не найден. Продолжаем искать дальше.
+                                    BoolTree.pop();
+                                    break;
+                                }
+                            }
+                        }
+
+                        break;
+                    }
+
+                    case 2: { // Правила не выполнились, ветвление.
+                        // Ветвление, создание новых узлов.
+
+                        int indexBranching = currentEquation->ChooseColForBranching();
+                        if (indexBranching < 0) {
+                            BoolTree.pop();
+                            flag = false;
+                            break;
+                        }
+
+                        BoolEquation *Equation0 = new BoolEquation(*currentEquation);
+                        BoolEquation *Equation1 = new BoolEquation(*currentEquation);
+
+                        Equation0->Simplify(indexBranching, '0');
+                        Equation1->Simplify(indexBranching, '1');
+
+                        NodeBoolTree *Node0 = new NodeBoolTree(Equation0);
+                        NodeBoolTree *Node1 = new NodeBoolTree(Equation1);
+
+                        currentNode->lt = Node0;
+                        currentNode->rt = Node1;
+
+                        BoolTree.push(Node1);
+                        BoolTree.push(Node0);
+
+                        flag = false;
+                        break;
+                    }
+                    }
+                }
+            } else {
+                BoolTree.pop();
+            }
+
+        } while (BoolTree.size() > 1 && !rootIsFinded);
+
+        if (rootIsFinded) {
+            cout << "Root is:\n ";
+            BoolInterval *finded_root = BoolTree.top()->eq->root;
+            cout << string(*finded_root);
+        } else {
+            cout << "Root is not exists!";
+        }
+
+    } else {
+        std::cout << "File does not exists.\n";
+    }
+
+    return 0;
 
 }

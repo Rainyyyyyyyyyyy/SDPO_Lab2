@@ -16,6 +16,7 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
         BBV.cpp \
+        branchingstrategy.cpp \
         boolequation.cpp \
         boolinterval.cpp \
         main.cpp
@@ -28,5 +29,6 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 HEADERS += \
     BBV.h \
     NodeBoolTree.h \
+        branchingstrategy.h \
     boolequation.h \
     boolinterval.h

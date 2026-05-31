@@ -4,6 +4,8 @@
 #include <ostream>
 #include <string>
 
+#include <memory>
+
 BoolEquation::BoolEquation(BoolInterval **cnf, BoolInterval *root, int cnfSize, int count, BBV mask)
 {
 	this->cnf = new BoolInterval*[cnfSize];
@@ -16,7 +18,6 @@ BoolEquation::BoolEquation(BoolInterval **cnf, BoolInterval *root, int cnfSize, 
 	this->cnfSize = cnfSize;
 	this->count = count;
 	this->mask = mask;
-
 }
 
 BoolEquation::BoolEquation(BoolEquation &equation)
@@ -31,6 +32,7 @@ BoolEquation::BoolEquation(BoolEquation &equation)
 	this->cnfSize = equation.cnfSize;
 	this->count = equation.count;
 	this->mask = equation.mask;
+	this->branchingStrategy = equation.branchingStrategy;
 }
 
 // Проверка правил
@@ -219,44 +221,20 @@ void BoolEquation::Simplify(int ixCol, char value)
 	mask.Set1(ixCol);
 }
 
+bool BoolEquation::SetBranchingStrategy(std::shared_ptr<BranchingStrategy> strategy) {
+	if (strategy) {
+		branchingStrategy = strategy;
+		return true;
+	} else {
+        return false;//branchingStrategy = std::make_shared<MostContraintBranchingStrategy>();
+	}
+}
+
+
+// return -1 если стратегия не установлена
 int BoolEquation::ChooseColForBranching()
 {
-	vector<int> indexes;
-	vector<int> values;
-	bool rezInit = false;
-
-	for (int i = 0; i < mask.getSize(); i++) {
-		if (mask[i] == 0) {
-			indexes.push_back(i);
-		}
-	}
-
-	for (int i = 0; i < cnfSize; i++) {
-		BoolInterval *interval = cnf[i];
-
-		if (interval != nullptr) {
-			if (!rezInit) {
-				for (int k = 0; k < indexes.size(); k++) {
-					if (interval->getValue(indexes.at(k)) == '-') {
-						values.push_back(1);
-					} else {
-						values.push_back(0);
-					}
-				}
-
-				rezInit = true;
-			} else {
-				for (int k = 0; k < indexes.size(); k++) {
-					if (interval->getValue(indexes.at(k)) == '-') {
-						//int val = values.at(k) + (interval->getValue(indexes.at(k)) - '0');
-						values.at(k)++;
-					}
-				}
-			}
-		}
-	}
-
-	int minElementIndex = std::min_element(values.begin(), values.end()) - values.begin();
-
-	return indexes.at(minElementIndex);
+    if(branchingStrategy)
+	return branchingStrategy->ChooseColumn(*this);
+    else return -1;
 }
