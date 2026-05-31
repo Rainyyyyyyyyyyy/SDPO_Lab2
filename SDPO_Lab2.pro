@@ -12,7 +12,8 @@ SOURCES += \
         SAT_DPLL/boolequation.cpp \
         SAT_DPLL/boolinterval.cpp \
         Allocator/Allocator.cpp \
-        SAT_DPLL/main.cpp
+        SAT_DPLL/main.cpp \
+        benchmark.cpp
         #main.cpp
 
 HEADERS += \

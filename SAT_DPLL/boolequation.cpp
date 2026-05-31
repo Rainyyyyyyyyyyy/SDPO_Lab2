@@ -6,8 +6,7 @@
 
 #include <memory>
 
-BoolEquation::BoolEquation(BoolInterval **cnf, BoolInterval *root, int cnfSize, int count, BBV mask,
-				   std::shared_ptr<BranchingStrategy> branchingStrategy)
+BoolEquation::BoolEquation(BoolInterval **cnf, BoolInterval *root, int cnfSize, int count, BBV mask)
 {
 	this->cnf = new BoolInterval*[cnfSize];
 
@@ -19,12 +18,6 @@ BoolEquation::BoolEquation(BoolInterval **cnf, BoolInterval *root, int cnfSize, 
 	this->cnfSize = cnfSize;
 	this->count = count;
 	this->mask = mask;
-	if (branchingStrategy) {
-		this->branchingStrategy = branchingStrategy;
-	} else {
-        this->branchingStrategy = std::make_shared<MostContraintBranchingStrategy>();
-	}
-
 }
 
 BoolEquation::BoolEquation(BoolEquation &equation)
@@ -228,20 +221,20 @@ void BoolEquation::Simplify(int ixCol, char value)
 	mask.Set1(ixCol);
 }
 
-void BoolEquation::SetBranchingStrategy(std::shared_ptr<BranchingStrategy> strategy)
-{
+bool BoolEquation::SetBranchingStrategy(std::shared_ptr<BranchingStrategy> strategy) {
 	if (strategy) {
 		branchingStrategy = strategy;
+		return true;
 	} else {
-        branchingStrategy = std::make_shared<MostContraintBranchingStrategy>();
+        return false;//branchingStrategy = std::make_shared<MostContraintBranchingStrategy>();
 	}
 }
 
+
+// return -1 если стратегия не установлена
 int BoolEquation::ChooseColForBranching()
 {
-	if (!branchingStrategy) {
-        branchingStrategy = std::make_shared<MostContraintBranchingStrategy>();
-	}
-
+    if(branchingStrategy)
 	return branchingStrategy->ChooseColumn(*this);
+    else return -1;
 }
