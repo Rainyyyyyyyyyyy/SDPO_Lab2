@@ -4,6 +4,7 @@
 #include <algorithm>
 #include <vector>
 
+// предложенная из пользовательского проекта стратегия выбора
 int MostContraintBranchingStrategy::ChooseColumn(BoolEquation &equation) const
 {
 	std::vector<int> indexes;
@@ -48,7 +49,33 @@ int MostContraintBranchingStrategy::ChooseColumn(BoolEquation &equation) const
 		return indexes.front();
 	}
 
-	int minElementIndex = static_cast<int>(std::min_element(values.begin(), values.end()) - values.begin());
+    int minElementIndex = std::min_element(values.begin(), values.end()) - values.begin();
 
 	return indexes.at(minElementIndex);
+}
+
+// первая слева незафиксированная переменная
+// если нет, то return -1
+int FirstFreeBranchingStrategy::ChooseColumn(BoolEquation &equation) const
+{
+	for (int i = 0; i < equation.mask.getSize(); i++) {
+		if (equation.mask[i] == 0) {
+			return i;
+		}
+	}
+
+	return -1;
+}
+
+// первая справа незафиксированная переменная
+// если нет, то return -1
+int LastFreeBranchingStrategy::ChooseColumn(BoolEquation &equation) const
+{
+	for (int i = equation.mask.getSize() - 1; i >= 0; i--) {
+		if (equation.mask[i] == 0) {
+			return i;
+		}
+	}
+
+	return -1;
 }
