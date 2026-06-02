@@ -75,6 +75,6 @@ CMakeLists.txt.user*
 
 .vscode/
 
-build/
-
 .PVS-Studio/
+
+build/

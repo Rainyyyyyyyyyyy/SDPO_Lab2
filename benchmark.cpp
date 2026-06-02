@@ -4,8 +4,8 @@
 #include "SAT_DPLL/boolinterval.h"
 #include <chrono>
 
-#include <QVector>
-#include <QDebug>
+//#include <QVector>
+//#include <QDebug>
 #define WIN32_LEAN_AND_MEAN  // убирает много лишнего из windows.h
 #define NOGDI                 // убирает GDI
 #include "Allocator/Allocator.h"
@@ -155,17 +155,17 @@ int main(void)
     allocatorStaticPool2.Deallocate(memory5);
     try{
 
-    Benchmark("Heap (Run 1)", AllocHeap, DeallocHeap);
-    Benchmark("Heap (Run 2)", AllocHeap, DeallocHeap);
-    Benchmark("Heap (Run 3)", AllocHeap, DeallocHeap);
-    Benchmark("Static Pool (Run 1)", AllocStaticPool, DeallocStaticPool);
-    Benchmark("Static Pool (Run 2)", AllocStaticPool, DeallocStaticPool);
-    Benchmark("Static Pool (Run 3)", AllocStaticPool, DeallocStaticPool);
-    Benchmark("Heap Blocks (Run 1)", AllocHeapBlocks, DeallocHeapBlocks);
-    Benchmark("Heap Blocks (Run 2)", AllocHeapBlocks, DeallocHeapBlocks);
-    Benchmark("Heap Blocks (Run 3)", AllocHeapBlocks, DeallocHeapBlocks);
+        Benchmark("Heap (Run 1)", AllocHeap, DeallocHeap);
+        Benchmark("Heap (Run 2)", AllocHeap, DeallocHeap);
+        Benchmark("Heap (Run 3)", AllocHeap, DeallocHeap);
+        Benchmark("Static Pool (Run 1)", AllocStaticPool, DeallocStaticPool);
+        Benchmark("Static Pool (Run 2)", AllocStaticPool, DeallocStaticPool);
+        Benchmark("Static Pool (Run 3)", AllocStaticPool, DeallocStaticPool);
+        Benchmark("Heap Blocks (Run 1)", AllocHeapBlocks, DeallocHeapBlocks);
+        Benchmark("Heap Blocks (Run 2)", AllocHeapBlocks, DeallocHeapBlocks);
+        Benchmark("Heap Blocks (Run 3)", AllocHeapBlocks, DeallocHeapBlocks);
     }catch (std::bad_alloc){
-        qDebug()<<"Bad Alloc!";
+        std::cout<<"Bad Alloc!";
     }
     return 0;
 }
