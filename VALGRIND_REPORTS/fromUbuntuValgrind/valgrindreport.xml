@@ -1,0 +1,2092 @@
+<?xml version="1.0"?>
+
+<valgrindoutput>
+
+<protocolversion>4</protocolversion>
+<protocoltool>memcheck</protocoltool>
+
+<preamble>
+  <line>Memcheck, a memory error detector</line>
+  <line>Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.</line>
+  <line>Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info</line>
+  <line>Command: ./SAT_DPLL</line>
+</preamble>
+
+<pid>10222</pid>
+<ppid>8610</ppid>
+<tool>memcheck</tool>
+
+<args>
+  <vargv>
+    <exe>/usr/bin/valgrind.bin</exe>
+    <arg>--leak-check=full</arg>
+    <arg>--xml=yes</arg>
+    <arg>--xml-file=xmlgrind.xml</arg>
+    <arg>--show-leak-kinds=all</arg>
+  </vargv>
+  <argv>
+    <exe>./SAT_DPLL</exe>
+  </argv>
+</args>
+
+<status>
+  <state>RUNNING</state>
+  <time>00:00:00:00.019 </time>
+</status>
+
+<error>
+  <unique>0x0</unique>
+  <tid>1</tid>
+  <kind>MismatchedAllocateDeallocateSize</kind>
+  <what>Mismatched new/delete size value: 1</what>
+  <stack>
+    <frame>
+      <ip>0x484A5B9</ip>
+      <obj>/usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator delete(void*, unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x1123A3</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BBV::operator=(char const*)</fn>
+    </frame>
+    <frame>
+      <ip>0x1155DC</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BoolEquation::CheckRules()</fn>
+    </frame>
+    <frame>
+      <ip>0x10C480</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+  <auxwhat>Address 0x4e3af50 is 0 bytes inside a block of size 4 alloc'd</auxwhat>
+  <stack>
+    <frame>
+      <ip>0x48485C3</ip>
+      <obj>/usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new[](unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x112291</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BBV::operator=(BBV&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x115584</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BoolEquation::CheckRules()</fn>
+    </frame>
+    <frame>
+      <ip>0x10C480</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x1</unique>
+  <tid>1</tid>
+  <kind>MismatchedFree</kind>
+  <what>Mismatched free() / delete / delete []</what>
+  <stack>
+    <frame>
+      <ip>0x484A61D</ip>
+      <obj>/usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator delete(void*, unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x1123A3</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BBV::operator=(char const*)</fn>
+    </frame>
+    <frame>
+      <ip>0x1155DC</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BoolEquation::CheckRules()</fn>
+    </frame>
+    <frame>
+      <ip>0x10C480</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+  <auxwhat>Address 0x4e3af50 is 0 bytes inside a block of size 4 alloc'd</auxwhat>
+  <stack>
+    <frame>
+      <ip>0x48485C3</ip>
+      <obj>/usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new[](unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x112291</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BBV::operator=(BBV&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x115584</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BoolEquation::CheckRules()</fn>
+    </frame>
+    <frame>
+      <ip>0x10C480</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x2</unique>
+  <tid>1</tid>
+  <kind>MismatchedAllocateDeallocateSize</kind>
+  <what>Mismatched new/delete size value: 1</what>
+  <stack>
+    <frame>
+      <ip>0x484A5B9</ip>
+      <obj>/usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator delete(void*, unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x1123A3</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BBV::operator=(char const*)</fn>
+    </frame>
+    <frame>
+      <ip>0x11564E</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BoolEquation::CheckRules()</fn>
+    </frame>
+    <frame>
+      <ip>0x10C480</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+  <auxwhat>Address 0x4e3ae10 is 0 bytes inside a block of size 4 alloc'd</auxwhat>
+  <stack>
+    <frame>
+      <ip>0x48485C3</ip>
+      <obj>/usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new[](unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x1123B4</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BBV::operator=(char const*)</fn>
+    </frame>
+    <frame>
+      <ip>0x115528</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BoolEquation::CheckRules()</fn>
+    </frame>
+    <frame>
+      <ip>0x10C480</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x3</unique>
+  <tid>1</tid>
+  <kind>MismatchedFree</kind>
+  <what>Mismatched free() / delete / delete []</what>
+  <stack>
+    <frame>
+      <ip>0x484A61D</ip>
+      <obj>/usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator delete(void*, unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x1123A3</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BBV::operator=(char const*)</fn>
+    </frame>
+    <frame>
+      <ip>0x11564E</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BoolEquation::CheckRules()</fn>
+    </frame>
+    <frame>
+      <ip>0x10C480</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+  <auxwhat>Address 0x4e3ae10 is 0 bytes inside a block of size 4 alloc'd</auxwhat>
+  <stack>
+    <frame>
+      <ip>0x48485C3</ip>
+      <obj>/usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new[](unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x1123B4</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BBV::operator=(char const*)</fn>
+    </frame>
+    <frame>
+      <ip>0x115528</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BoolEquation::CheckRules()</fn>
+    </frame>
+    <frame>
+      <ip>0x10C480</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x4</unique>
+  <tid>1</tid>
+  <kind>MismatchedAllocateDeallocateSize</kind>
+  <what>Mismatched new/delete size value: 1</what>
+  <stack>
+    <frame>
+      <ip>0x484A5B9</ip>
+      <obj>/usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator delete(void*, unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x1123A3</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BBV::operator=(char const*)</fn>
+    </frame>
+    <frame>
+      <ip>0x1156A2</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BoolEquation::CheckRules()</fn>
+    </frame>
+    <frame>
+      <ip>0x10C480</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+  <auxwhat>Address 0x4e3aeb0 is 0 bytes inside a block of size 4 alloc'd</auxwhat>
+  <stack>
+    <frame>
+      <ip>0x48485C3</ip>
+      <obj>/usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new[](unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x112291</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BBV::operator=(BBV&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x11555A</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BoolEquation::CheckRules()</fn>
+    </frame>
+    <frame>
+      <ip>0x10C480</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x5</unique>
+  <tid>1</tid>
+  <kind>MismatchedFree</kind>
+  <what>Mismatched free() / delete / delete []</what>
+  <stack>
+    <frame>
+      <ip>0x484A61D</ip>
+      <obj>/usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator delete(void*, unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x1123A3</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BBV::operator=(char const*)</fn>
+    </frame>
+    <frame>
+      <ip>0x1156A2</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BoolEquation::CheckRules()</fn>
+    </frame>
+    <frame>
+      <ip>0x10C480</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+  <auxwhat>Address 0x4e3aeb0 is 0 bytes inside a block of size 4 alloc'd</auxwhat>
+  <stack>
+    <frame>
+      <ip>0x48485C3</ip>
+      <obj>/usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new[](unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x112291</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BBV::operator=(BBV&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x11555A</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BoolEquation::CheckRules()</fn>
+    </frame>
+    <frame>
+      <ip>0x10C480</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x570</unique>
+  <tid>1</tid>
+  <kind>MismatchedAllocateDeallocateSize</kind>
+  <what>Mismatched new/delete size value: 1</what>
+  <stack>
+    <frame>
+      <ip>0x484A5B9</ip>
+      <obj>/usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator delete(void*, unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x1123A3</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BBV::operator=(char const*)</fn>
+    </frame>
+    <frame>
+      <ip>0x116B35</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BoolInterval::isEqualComponent(BoolInterval&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x10C56D</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+  <auxwhat>Address 0x4e9a080 is 0 bytes inside a block of size 4 alloc'd</auxwhat>
+  <stack>
+    <frame>
+      <ip>0x48485C3</ip>
+      <obj>/usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new[](unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x111E6E</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BBV::BBV(BBV&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x116AAC</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BoolInterval::isEqualComponent(BoolInterval&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x10C56D</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x571</unique>
+  <tid>1</tid>
+  <kind>MismatchedFree</kind>
+  <what>Mismatched free() / delete / delete []</what>
+  <stack>
+    <frame>
+      <ip>0x484A61D</ip>
+      <obj>/usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator delete(void*, unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x1123A3</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BBV::operator=(char const*)</fn>
+    </frame>
+    <frame>
+      <ip>0x116B35</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BoolInterval::isEqualComponent(BoolInterval&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x10C56D</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+  <auxwhat>Address 0x4e9a080 is 0 bytes inside a block of size 4 alloc'd</auxwhat>
+  <stack>
+    <frame>
+      <ip>0x48485C3</ip>
+      <obj>/usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new[](unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x111E6E</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BBV::BBV(BBV&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x116AAC</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BoolInterval::isEqualComponent(BoolInterval&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x10C56D</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x572</unique>
+  <tid>1</tid>
+  <kind>MismatchedAllocateDeallocateSize</kind>
+  <what>Mismatched new/delete size value: 1</what>
+  <stack>
+    <frame>
+      <ip>0x484A5B9</ip>
+      <obj>/usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator delete(void*, unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x1123A3</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BBV::operator=(char const*)</fn>
+    </frame>
+    <frame>
+      <ip>0x116B89</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BoolInterval::isEqualComponent(BoolInterval&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x10C56D</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+  <auxwhat>Address 0x4e9a0d0 is 0 bytes inside a block of size 4 alloc'd</auxwhat>
+  <stack>
+    <frame>
+      <ip>0x48485C3</ip>
+      <obj>/usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new[](unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x111E6E</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BBV::BBV(BBV&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x116AC2</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BoolInterval::isEqualComponent(BoolInterval&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x10C56D</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x573</unique>
+  <tid>1</tid>
+  <kind>MismatchedFree</kind>
+  <what>Mismatched free() / delete / delete []</what>
+  <stack>
+    <frame>
+      <ip>0x484A61D</ip>
+      <obj>/usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator delete(void*, unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x1123A3</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BBV::operator=(char const*)</fn>
+    </frame>
+    <frame>
+      <ip>0x116B89</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BoolInterval::isEqualComponent(BoolInterval&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x10C56D</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+  <auxwhat>Address 0x4e9a0d0 is 0 bytes inside a block of size 4 alloc'd</auxwhat>
+  <stack>
+    <frame>
+      <ip>0x48485C3</ip>
+      <obj>/usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new[](unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x111E6E</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BBV::BBV(BBV&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x116AC2</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BoolInterval::isEqualComponent(BoolInterval&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x10C56D</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x574</unique>
+  <tid>1</tid>
+  <kind>MismatchedAllocateDeallocateSize</kind>
+  <what>Mismatched new/delete size value: 1</what>
+  <stack>
+    <frame>
+      <ip>0x484A5B9</ip>
+      <obj>/usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator delete(void*, unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x1123A3</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BBV::operator=(char const*)</fn>
+    </frame>
+    <frame>
+      <ip>0x116BDD</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BoolInterval::isEqualComponent(BoolInterval&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x10C56D</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+  <auxwhat>Address 0x4e9a120 is 0 bytes inside a block of size 4 alloc'd</auxwhat>
+  <stack>
+    <frame>
+      <ip>0x48485C3</ip>
+      <obj>/usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new[](unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x111E6E</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BBV::BBV(BBV&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x116AD8</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BoolInterval::isEqualComponent(BoolInterval&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x10C56D</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x575</unique>
+  <tid>1</tid>
+  <kind>MismatchedFree</kind>
+  <what>Mismatched free() / delete / delete []</what>
+  <stack>
+    <frame>
+      <ip>0x484A61D</ip>
+      <obj>/usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator delete(void*, unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x1123A3</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BBV::operator=(char const*)</fn>
+    </frame>
+    <frame>
+      <ip>0x116BDD</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BoolInterval::isEqualComponent(BoolInterval&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x10C56D</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+  <auxwhat>Address 0x4e9a120 is 0 bytes inside a block of size 4 alloc'd</auxwhat>
+  <stack>
+    <frame>
+      <ip>0x48485C3</ip>
+      <obj>/usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new[](unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x111E6E</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BBV::BBV(BBV&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x116AD8</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BoolInterval::isEqualComponent(BoolInterval&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x10C56D</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x576</unique>
+  <tid>1</tid>
+  <kind>MismatchedAllocateDeallocateSize</kind>
+  <what>Mismatched new/delete size value: 1</what>
+  <stack>
+    <frame>
+      <ip>0x484A5B9</ip>
+      <obj>/usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator delete(void*, unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x1123A3</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BBV::operator=(char const*)</fn>
+    </frame>
+    <frame>
+      <ip>0x116C2E</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BoolInterval::isEqualComponent(BoolInterval&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x10C56D</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+  <auxwhat>Address 0x4e9a170 is 0 bytes inside a block of size 4 alloc'd</auxwhat>
+  <stack>
+    <frame>
+      <ip>0x48485C3</ip>
+      <obj>/usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new[](unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x111E6E</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BBV::BBV(BBV&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x116AEE</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BoolInterval::isEqualComponent(BoolInterval&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x10C56D</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x577</unique>
+  <tid>1</tid>
+  <kind>MismatchedFree</kind>
+  <what>Mismatched free() / delete / delete []</what>
+  <stack>
+    <frame>
+      <ip>0x484A61D</ip>
+      <obj>/usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator delete(void*, unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x1123A3</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BBV::operator=(char const*)</fn>
+    </frame>
+    <frame>
+      <ip>0x116C2E</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BoolInterval::isEqualComponent(BoolInterval&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x10C56D</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+  <auxwhat>Address 0x4e9a170 is 0 bytes inside a block of size 4 alloc'd</auxwhat>
+  <stack>
+    <frame>
+      <ip>0x48485C3</ip>
+      <obj>/usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new[](unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x111E6E</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BBV::BBV(BBV&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x116AEE</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BoolInterval::isEqualComponent(BoolInterval&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x10C56D</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x578</unique>
+  <tid>1</tid>
+  <kind>MismatchedAllocateDeallocateSize</kind>
+  <what>Mismatched new/delete size value: 1</what>
+  <stack>
+    <frame>
+      <ip>0x484A5B9</ip>
+      <obj>/usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator delete(void*, unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x1123A3</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BBV::operator=(char const*)</fn>
+    </frame>
+    <frame>
+      <ip>0x116C7F</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BoolInterval::isEqualComponent(BoolInterval&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x10C56D</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+  <auxwhat>Address 0x4e9a7e0 is 0 bytes inside a block of size 4 alloc'd</auxwhat>
+  <stack>
+    <frame>
+      <ip>0x48485C3</ip>
+      <obj>/usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new[](unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x1123B4</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BBV::operator=(char const*)</fn>
+    </frame>
+    <frame>
+      <ip>0x116C2E</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BoolInterval::isEqualComponent(BoolInterval&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x10C56D</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x579</unique>
+  <tid>1</tid>
+  <kind>MismatchedFree</kind>
+  <what>Mismatched free() / delete / delete []</what>
+  <stack>
+    <frame>
+      <ip>0x484A61D</ip>
+      <obj>/usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator delete(void*, unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x1123A3</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BBV::operator=(char const*)</fn>
+    </frame>
+    <frame>
+      <ip>0x116C7F</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BoolInterval::isEqualComponent(BoolInterval&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x10C56D</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+  <auxwhat>Address 0x4e9a7e0 is 0 bytes inside a block of size 4 alloc'd</auxwhat>
+  <stack>
+    <frame>
+      <ip>0x48485C3</ip>
+      <obj>/usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new[](unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x1123B4</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BBV::operator=(char const*)</fn>
+    </frame>
+    <frame>
+      <ip>0x116C2E</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BoolInterval::isEqualComponent(BoolInterval&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x10C56D</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+
+<status>
+  <state>FINISHED</state>
+  <time>00:00:00:04.975 </time>
+</status>
+
+<error>
+  <unique>0x764</unique>
+  <tid>1</tid>
+  <kind>Leak_IndirectlyLost</kind>
+  <xwhat>
+    <text>4 bytes in 1 blocks are indirectly lost in loss record 1 of 37</text>
+    <leakedbytes>4</leakedbytes>
+    <leakedblocks>1</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x48485C3</ip>
+      <obj>/usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new[](unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x112291</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BBV::operator=(BBV&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x116716</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BoolInterval::BoolInterval(BBV&amp;, BBV&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x10C1B0</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x765</unique>
+  <tid>1</tid>
+  <kind>Leak_IndirectlyLost</kind>
+  <xwhat>
+    <text>4 bytes in 1 blocks are indirectly lost in loss record 2 of 37</text>
+    <leakedbytes>4</leakedbytes>
+    <leakedblocks>1</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x48485C3</ip>
+      <obj>/usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new[](unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x112291</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BBV::operator=(BBV&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x11673D</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BoolInterval::BoolInterval(BBV&amp;, BBV&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x10C1B0</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x766</unique>
+  <tid>1</tid>
+  <kind>Leak_IndirectlyLost</kind>
+  <xwhat>
+    <text>4 bytes in 1 blocks are indirectly lost in loss record 3 of 37</text>
+    <leakedbytes>4</leakedbytes>
+    <leakedblocks>1</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x48485C3</ip>
+      <obj>/usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new[](unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x112291</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BBV::operator=(BBV&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x114FF6</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BoolEquation::BoolEquation(BoolInterval**, BoolInterval*, int, int, BBV)</fn>
+    </frame>
+    <frame>
+      <ip>0x10C215</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x767</unique>
+  <tid>1</tid>
+  <kind>Leak_IndirectlyLost</kind>
+  <xwhat>
+    <text>24 bytes in 1 blocks are indirectly lost in loss record 4 of 37</text>
+    <leakedbytes>24</leakedbytes>
+    <leakedblocks>1</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x4846FA3</ip>
+      <obj>/usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new(unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x1111AA</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>std::__new_allocator&lt;std::_Sp_counted_ptr_inplace&lt;MostContraintBranchingStrategy, std::allocator&lt;void&gt;, (__gnu_cxx::_Lock_policy)2&gt; &gt;::allocate(unsigned long, void const*)</fn>
+    </frame>
+    <frame>
+      <ip>0x1105D3</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>std::__allocated_ptr&lt;std::allocator&lt;std::_Sp_counted_ptr_inplace&lt;MostContraintBranchingStrategy, std::allocator&lt;void&gt;, (__gnu_cxx::_Lock_policy)2&gt; &gt; &gt; std::__allocate_guarded&lt;std::allocator&lt;std::_Sp_counted_ptr_inplace&lt;MostContraintBranchingStrategy, std::allocator&lt;void&gt;, (__gnu_cxx::_Lock_policy)2&gt; &gt; &gt;(std::allocator&lt;std::_Sp_counted_ptr_inplace&lt;MostContraintBranchingStrategy, std::allocator&lt;void&gt;, (__gnu_cxx::_Lock_policy)2&gt; &gt;&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x10FCF8</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>std::__shared_count&lt;(__gnu_cxx::_Lock_policy)2&gt;::__shared_count&lt;MostContraintBranchingStrategy, std::allocator&lt;void&gt;&gt;(MostContraintBranchingStrategy*&amp;, std::_Sp_alloc_shared_tag&lt;std::allocator&lt;void&gt; &gt;)</fn>
+    </frame>
+    <frame>
+      <ip>0x10F0D9</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>std::__shared_ptr&lt;MostContraintBranchingStrategy, (__gnu_cxx::_Lock_policy)2&gt;::__shared_ptr&lt;std::allocator&lt;void&gt;&gt;(std::_Sp_alloc_shared_tag&lt;std::allocator&lt;void&gt; &gt;)</fn>
+    </frame>
+    <frame>
+      <ip>0x10E76C</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>std::shared_ptr&lt;MostContraintBranchingStrategy&gt;::shared_ptr&lt;std::allocator&lt;void&gt;&gt;(std::_Sp_alloc_shared_tag&lt;std::allocator&lt;void&gt; &gt;)</fn>
+    </frame>
+    <frame>
+      <ip>0x10DC35</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>std::shared_ptr&lt;std::enable_if&lt;!std::is_array&lt;MostContraintBranchingStrategy&gt;::value, MostContraintBranchingStrategy&gt;::type&gt; std::make_shared&lt;MostContraintBranchingStrategy&gt;()</fn>
+    </frame>
+    <frame>
+      <ip>0x10C258</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x768</unique>
+  <tid>1</tid>
+  <kind>Leak_IndirectlyLost</kind>
+  <xwhat>
+    <text>32 bytes in 1 blocks are indirectly lost in loss record 5 of 37</text>
+    <leakedbytes>32</leakedbytes>
+    <leakedblocks>1</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x4846FA3</ip>
+      <obj>/usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new(unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x10C18E</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x769</unique>
+  <tid>1</tid>
+  <kind>Leak_IndirectlyLost</kind>
+  <xwhat>
+    <text>40 bytes in 10 blocks are indirectly lost in loss record 6 of 37</text>
+    <leakedbytes>40</leakedbytes>
+    <leakedblocks>10</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x48485C3</ip>
+      <obj>/usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new[](unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x112291</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BBV::operator=(BBV&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x116716</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BoolInterval::BoolInterval(BBV&amp;, BBV&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x115176</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BoolEquation::BoolEquation(BoolEquation&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x10C608</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x76a</unique>
+  <tid>1</tid>
+  <kind>Leak_IndirectlyLost</kind>
+  <xwhat>
+    <text>40 bytes in 10 blocks are indirectly lost in loss record 7 of 37</text>
+    <leakedbytes>40</leakedbytes>
+    <leakedblocks>10</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x48485C3</ip>
+      <obj>/usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new[](unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x112291</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BBV::operator=(BBV&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x11673D</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BoolInterval::BoolInterval(BBV&amp;, BBV&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x115176</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BoolEquation::BoolEquation(BoolEquation&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x10C608</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x76b</unique>
+  <tid>1</tid>
+  <kind>Leak_IndirectlyLost</kind>
+  <xwhat>
+    <text>40 bytes in 10 blocks are indirectly lost in loss record 8 of 37</text>
+    <leakedbytes>40</leakedbytes>
+    <leakedblocks>10</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x48485C3</ip>
+      <obj>/usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new[](unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x112291</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BBV::operator=(BBV&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x1151B9</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BoolEquation::BoolEquation(BoolEquation&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x10C608</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x76c</unique>
+  <tid>1</tid>
+  <kind>Leak_IndirectlyLost</kind>
+  <xwhat>
+    <text>40 bytes in 10 blocks are indirectly lost in loss record 9 of 37</text>
+    <leakedbytes>40</leakedbytes>
+    <leakedblocks>10</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x48485C3</ip>
+      <obj>/usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new[](unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x112291</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BBV::operator=(BBV&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x116716</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BoolInterval::BoolInterval(BBV&amp;, BBV&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x115176</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BoolEquation::BoolEquation(BoolEquation&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x10C634</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x76d</unique>
+  <tid>1</tid>
+  <kind>Leak_IndirectlyLost</kind>
+  <xwhat>
+    <text>40 bytes in 10 blocks are indirectly lost in loss record 10 of 37</text>
+    <leakedbytes>40</leakedbytes>
+    <leakedblocks>10</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x48485C3</ip>
+      <obj>/usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new[](unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x112291</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BBV::operator=(BBV&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x11673D</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BoolInterval::BoolInterval(BBV&amp;, BBV&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x115176</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BoolEquation::BoolEquation(BoolEquation&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x10C634</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x76e</unique>
+  <tid>1</tid>
+  <kind>Leak_IndirectlyLost</kind>
+  <xwhat>
+    <text>40 bytes in 10 blocks are indirectly lost in loss record 11 of 37</text>
+    <leakedbytes>40</leakedbytes>
+    <leakedblocks>10</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x48485C3</ip>
+      <obj>/usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new[](unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x112291</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BBV::operator=(BBV&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x1151B9</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BoolEquation::BoolEquation(BoolEquation&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x10C634</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x76f</unique>
+  <tid>1</tid>
+  <kind>Leak_IndirectlyLost</kind>
+  <xwhat>
+    <text>56 bytes in 1 blocks are indirectly lost in loss record 12 of 37</text>
+    <leakedbytes>56</leakedbytes>
+    <leakedblocks>1</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x4846FA3</ip>
+      <obj>/usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new(unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x10C1C1</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x770</unique>
+  <tid>1</tid>
+  <kind>Leak_IndirectlyLost</kind>
+  <xwhat>
+    <text>200 bytes in 50 blocks are indirectly lost in loss record 13 of 37</text>
+    <leakedbytes>200</leakedbytes>
+    <leakedblocks>50</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x48485C3</ip>
+      <obj>/usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new[](unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x1123B4</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BBV::operator=(char const*)</fn>
+    </frame>
+    <frame>
+      <ip>0x11651E</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BoolInterval::BoolInterval(char const*)</fn>
+    </frame>
+    <frame>
+      <ip>0x10BFE3</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x771</unique>
+  <tid>1</tid>
+  <kind>Leak_IndirectlyLost</kind>
+  <xwhat>
+    <text>200 bytes in 50 blocks are indirectly lost in loss record 14 of 37</text>
+    <leakedbytes>200</leakedbytes>
+    <leakedblocks>50</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x48485C3</ip>
+      <obj>/usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new[](unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x1123B4</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BBV::operator=(char const*)</fn>
+    </frame>
+    <frame>
+      <ip>0x116570</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BoolInterval::BoolInterval(char const*)</fn>
+    </frame>
+    <frame>
+      <ip>0x10BFE3</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x772</unique>
+  <tid>1</tid>
+  <kind>Leak_IndirectlyLost</kind>
+  <xwhat>
+    <text>240 bytes in 10 blocks are indirectly lost in loss record 15 of 37</text>
+    <leakedbytes>240</leakedbytes>
+    <leakedblocks>10</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x4846FA3</ip>
+      <obj>/usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new(unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x10C67D</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x773</unique>
+  <tid>1</tid>
+  <kind>Leak_IndirectlyLost</kind>
+  <xwhat>
+    <text>240 bytes in 10 blocks are indirectly lost in loss record 16 of 37</text>
+    <leakedbytes>240</leakedbytes>
+    <leakedblocks>10</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x4846FA3</ip>
+      <obj>/usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new(unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x10C6A3</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x774</unique>
+  <tid>1</tid>
+  <kind>Leak_IndirectlyLost</kind>
+  <xwhat>
+    <text>320 bytes in 10 blocks are indirectly lost in loss record 17 of 37</text>
+    <leakedbytes>320</leakedbytes>
+    <leakedblocks>10</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x4846FA3</ip>
+      <obj>/usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new(unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x115148</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BoolEquation::BoolEquation(BoolEquation&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x10C608</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x775</unique>
+  <tid>1</tid>
+  <kind>Leak_IndirectlyLost</kind>
+  <xwhat>
+    <text>320 bytes in 10 blocks are indirectly lost in loss record 18 of 37</text>
+    <leakedbytes>320</leakedbytes>
+    <leakedblocks>10</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x4846FA3</ip>
+      <obj>/usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new(unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x115148</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BoolEquation::BoolEquation(BoolEquation&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x10C634</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x776</unique>
+  <tid>1</tid>
+  <kind>Leak_IndirectlyLost</kind>
+  <xwhat>
+    <text>400 bytes in 1 blocks are indirectly lost in loss record 19 of 37</text>
+    <leakedbytes>400</leakedbytes>
+    <leakedblocks>1</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x48485C3</ip>
+      <obj>/usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new[](unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x114F52</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BoolEquation::BoolEquation(BoolInterval**, BoolInterval*, int, int, BBV)</fn>
+    </frame>
+    <frame>
+      <ip>0x10C215</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x777</unique>
+  <tid>1</tid>
+  <kind>Leak_IndirectlyLost</kind>
+  <xwhat>
+    <text>560 bytes in 10 blocks are indirectly lost in loss record 20 of 37</text>
+    <leakedbytes>560</leakedbytes>
+    <leakedblocks>10</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x4846FA3</ip>
+      <obj>/usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new(unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x10C5ED</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x778</unique>
+  <tid>1</tid>
+  <kind>Leak_IndirectlyLost</kind>
+  <xwhat>
+    <text>560 bytes in 10 blocks are indirectly lost in loss record 21 of 37</text>
+    <leakedbytes>560</leakedbytes>
+    <leakedblocks>10</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x4846FA3</ip>
+      <obj>/usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new(unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x10C619</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x779</unique>
+  <tid>1</tid>
+  <kind>Leak_DefinitelyLost</kind>
+  <xwhat>
+    <text>594 bytes in 18 blocks are definitely lost in loss record 22 of 37</text>
+    <leakedbytes>594</leakedbytes>
+    <leakedblocks>18</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x48485C3</ip>
+      <obj>/usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new[](unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x112FD9</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BBV::operator char*()</fn>
+    </frame>
+    <frame>
+      <ip>0x115512</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BoolEquation::CheckRules()</fn>
+    </frame>
+    <frame>
+      <ip>0x10C480</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x77a</unique>
+  <tid>1</tid>
+  <kind>Leak_IndirectlyLost</kind>
+  <xwhat>
+    <text>1,600 bytes in 50 blocks are indirectly lost in loss record 23 of 37</text>
+    <leakedbytes>1600</leakedbytes>
+    <leakedblocks>50</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x4846FA3</ip>
+      <obj>/usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new(unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x10BFC0</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x77b</unique>
+  <tid>1</tid>
+  <kind>Leak_DefinitelyLost</kind>
+  <xwhat>
+    <text>1,650 bytes in 50 blocks are definitely lost in loss record 24 of 37</text>
+    <leakedbytes>1650</leakedbytes>
+    <leakedblocks>50</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x48485C3</ip>
+      <obj>/usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new[](unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x112FD9</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BBV::operator char*()</fn>
+    </frame>
+    <frame>
+      <ip>0x116508</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BoolInterval::BoolInterval(char const*)</fn>
+    </frame>
+    <frame>
+      <ip>0x10BFE3</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x77c</unique>
+  <tid>1</tid>
+  <kind>Leak_DefinitelyLost</kind>
+  <xwhat>
+    <text>1,650 bytes in 50 blocks are definitely lost in loss record 25 of 37</text>
+    <leakedbytes>1650</leakedbytes>
+    <leakedblocks>50</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x48485C3</ip>
+      <obj>/usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new[](unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x112FD9</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BBV::operator char*()</fn>
+    </frame>
+    <frame>
+      <ip>0x116556</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BoolInterval::BoolInterval(char const*)</fn>
+    </frame>
+    <frame>
+      <ip>0x10BFE3</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x77d</unique>
+  <tid>1</tid>
+  <kind>Leak_DefinitelyLost</kind>
+  <xwhat>
+    <text>1,650 bytes in 50 blocks are definitely lost in loss record 26 of 37</text>
+    <leakedbytes>1650</leakedbytes>
+    <leakedblocks>50</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x48485C3</ip>
+      <obj>/usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new[](unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x112FD9</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BBV::operator char*()</fn>
+    </frame>
+    <frame>
+      <ip>0x116B1F</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BoolInterval::isEqualComponent(BoolInterval&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x10C56D</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x77e</unique>
+  <tid>1</tid>
+  <kind>Leak_DefinitelyLost</kind>
+  <xwhat>
+    <text>1,650 bytes in 50 blocks are definitely lost in loss record 27 of 37</text>
+    <leakedbytes>1650</leakedbytes>
+    <leakedblocks>50</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x48485C3</ip>
+      <obj>/usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new[](unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x112FD9</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BBV::operator char*()</fn>
+    </frame>
+    <frame>
+      <ip>0x116B73</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BoolInterval::isEqualComponent(BoolInterval&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x10C56D</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x77f</unique>
+  <tid>1</tid>
+  <kind>Leak_DefinitelyLost</kind>
+  <xwhat>
+    <text>1,650 bytes in 50 blocks are definitely lost in loss record 28 of 37</text>
+    <leakedbytes>1650</leakedbytes>
+    <leakedblocks>50</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x48485C3</ip>
+      <obj>/usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new[](unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x112FD9</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BBV::operator char*()</fn>
+    </frame>
+    <frame>
+      <ip>0x116BC7</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BoolInterval::isEqualComponent(BoolInterval&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x10C56D</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x780</unique>
+  <tid>1</tid>
+  <kind>Leak_DefinitelyLost</kind>
+  <xwhat>
+    <text>1,650 bytes in 50 blocks are definitely lost in loss record 29 of 37</text>
+    <leakedbytes>1650</leakedbytes>
+    <leakedblocks>50</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x48485C3</ip>
+      <obj>/usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new[](unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x112FD9</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BBV::operator char*()</fn>
+    </frame>
+    <frame>
+      <ip>0x116C18</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BoolInterval::isEqualComponent(BoolInterval&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x10C56D</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x781</unique>
+  <tid>1</tid>
+  <kind>Leak_DefinitelyLost</kind>
+  <xwhat>
+    <text>1,650 bytes in 50 blocks are definitely lost in loss record 30 of 37</text>
+    <leakedbytes>1650</leakedbytes>
+    <leakedblocks>50</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x48485C3</ip>
+      <obj>/usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new[](unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x112FD9</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BBV::operator char*()</fn>
+    </frame>
+    <frame>
+      <ip>0x116C69</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BoolInterval::isEqualComponent(BoolInterval&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x10C56D</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x782</unique>
+  <tid>1</tid>
+  <kind>Leak_DefinitelyLost</kind>
+  <xwhat>
+    <text>2,400 (400 direct, 2,000 indirect) bytes in 1 blocks are definitely lost in loss record 31 of 37</text>
+    <leakedbytes>2400</leakedbytes>
+    <leakedblocks>1</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x48485C3</ip>
+      <obj>/usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new[](unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x10BF08</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x783</unique>
+  <tid>1</tid>
+  <kind>Leak_IndirectlyLost</kind>
+  <xwhat>
+    <text>4,000 bytes in 10 blocks are indirectly lost in loss record 32 of 37</text>
+    <leakedbytes>4000</leakedbytes>
+    <leakedblocks>10</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x48485C3</ip>
+      <obj>/usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new[](unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x1150D1</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BoolEquation::BoolEquation(BoolEquation&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x10C608</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x784</unique>
+  <tid>1</tid>
+  <kind>Leak_IndirectlyLost</kind>
+  <xwhat>
+    <text>4,000 bytes in 10 blocks are indirectly lost in loss record 33 of 37</text>
+    <leakedbytes>4000</leakedbytes>
+    <leakedblocks>10</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x48485C3</ip>
+      <obj>/usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new[](unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x1150D1</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BoolEquation::BoolEquation(BoolEquation&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x10C634</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x785</unique>
+  <tid>1</tid>
+  <kind>Leak_DefinitelyLost</kind>
+  <xwhat>
+    <text>7,656 bytes in 232 blocks are definitely lost in loss record 34 of 37</text>
+    <leakedbytes>7656</leakedbytes>
+    <leakedblocks>232</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x48485C3</ip>
+      <obj>/usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new[](unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x112FD9</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BBV::operator char*()</fn>
+    </frame>
+    <frame>
+      <ip>0x1155C6</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BoolEquation::CheckRules()</fn>
+    </frame>
+    <frame>
+      <ip>0x10C480</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x786</unique>
+  <tid>1</tid>
+  <kind>Leak_DefinitelyLost</kind>
+  <xwhat>
+    <text>7,656 bytes in 232 blocks are definitely lost in loss record 35 of 37</text>
+    <leakedbytes>7656</leakedbytes>
+    <leakedblocks>232</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x48485C3</ip>
+      <obj>/usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new[](unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x112FD9</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BBV::operator char*()</fn>
+    </frame>
+    <frame>
+      <ip>0x115638</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BoolEquation::CheckRules()</fn>
+    </frame>
+    <frame>
+      <ip>0x10C480</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x787</unique>
+  <tid>1</tid>
+  <kind>Leak_DefinitelyLost</kind>
+  <xwhat>
+    <text>7,656 bytes in 232 blocks are definitely lost in loss record 36 of 37</text>
+    <leakedbytes>7656</leakedbytes>
+    <leakedblocks>232</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x48485C3</ip>
+      <obj>/usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new[](unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x112FD9</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BBV::operator char*()</fn>
+    </frame>
+    <frame>
+      <ip>0x11568C</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>BoolEquation::CheckRules()</fn>
+    </frame>
+    <frame>
+      <ip>0x10C480</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x788</unique>
+  <tid>1</tid>
+  <kind>Leak_DefinitelyLost</kind>
+  <xwhat>
+    <text>11,028 (24 direct, 11,004 indirect) bytes in 1 blocks are definitely lost in loss record 37 of 37</text>
+    <leakedbytes>11028</leakedbytes>
+    <leakedblocks>1</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x4846FA3</ip>
+      <obj>/usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new(unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x10C3DE</ip>
+      <obj>/home/user/Desktop/Visual_Code_projs/trash/sdpol2/SDPO_Lab2/build/SAT_DPLL</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+<errorcounts>
+  <pair>
+    <count>50</count>
+    <unique>0x579</unique>
+  </pair>
+  <pair>
+    <count>50</count>
+    <unique>0x578</unique>
+  </pair>
+  <pair>
+    <count>50</count>
+    <unique>0x577</unique>
+  </pair>
+  <pair>
+    <count>50</count>
+    <unique>0x576</unique>
+  </pair>
+  <pair>
+    <count>50</count>
+    <unique>0x575</unique>
+  </pair>
+  <pair>
+    <count>50</count>
+    <unique>0x574</unique>
+  </pair>
+  <pair>
+    <count>50</count>
+    <unique>0x573</unique>
+  </pair>
+  <pair>
+    <count>50</count>
+    <unique>0x572</unique>
+  </pair>
+  <pair>
+    <count>50</count>
+    <unique>0x571</unique>
+  </pair>
+  <pair>
+    <count>50</count>
+    <unique>0x570</unique>
+  </pair>
+  <pair>
+    <count>232</count>
+    <unique>0x5</unique>
+  </pair>
+  <pair>
+    <count>232</count>
+    <unique>0x4</unique>
+  </pair>
+  <pair>
+    <count>232</count>
+    <unique>0x3</unique>
+  </pair>
+  <pair>
+    <count>232</count>
+    <unique>0x2</unique>
+  </pair>
+  <pair>
+    <count>232</count>
+    <unique>0x1</unique>
+  </pair>
+  <pair>
+    <count>232</count>
+    <unique>0x0</unique>
+  </pair>
+</errorcounts>
+
+<suppcounts>
+</suppcounts>
+
+</valgrindoutput>
+
