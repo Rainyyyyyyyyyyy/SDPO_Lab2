@@ -34,32 +34,19 @@ std::string getExecutablePath() {
     return std::string(path);
 }
 
+//#include <filesystem>     // вспомогательная библиотека для вывода текущей директории исполняемого файла
 int main(int argc, char *argv[]) {
-
-    //    QFileInfo ffaf("..");
-    //    qDebug()<<ffaf.absoluteFilePath();
-    //    return 0;
-    /*              QCoreApplication qcoreappa(argc, argv); */
-    //std::cout<<"localPath: ";;//qDebug()<<"localPath: "<<qcoreappa.applicationDirPath();
-    //QStringList full_file_list;
     std::list < std::string > full_file_list;
-    //std::list < std::list < std::string > > Elements; //QList<QStringList> Elements;
-    std::string filepath; //QString filepath;//std::string filepath;
-    //std::list<std::string> inputs; //QStringList inputs;
-
-    //QTextStream qin(stdin);
-    //std::cout << "Input file path...\n";
-    //std::cin >> filepath;
-    // Hardcode input
-    //	filepath = "sat_ex_2.pla";
-    //filepath = "Sat_ex11_3.pla";
+    std::string filepath;
 
     // ..\SDPO_Lab2\SAT_DPLL\SatExamples
-    // E:\Z_vsyakoe_dla_echeby\4k2sem\SEcure_Develop_PO(Andreeva)\laba2\(UserRelease)\SAT_DPLL\SatExamples\Sat_ex11_3.pla
+    // (UserRelease)\SAT_DPLL\SatExamples\Sat_ex11_3.pla
     //do{
+
+    //std::cout<<"Current folder: "<<filesystem::current_path()<<'\n';
     std::cout<<"Enter path to example.pla: ";
     std::cin>>filepath;  //filepath = "Sat_ex30_3.pla";
-    //}while(std::filesystem::exists(std::filesystem::path(filepath))==false);//(QFileInfo::exists(filepath) == false);
+
     //считываем весь файл
     std::ifstream file(filepath);
     if (file.is_open()) {
@@ -69,9 +56,6 @@ int main(int argc, char *argv[]) {
             if (!line.empty() && line.back() == '\r') {
                 line.pop_back();
             }
-            /*line.erase(std::remove_if(line.begin(), line.end(),
-                                     [](unsigned char ch) { return std::isspace(ch); }),
-                      line.end());*/
             // std::remove() возвращает указатель (итератор) на конец новой строки, по
             line.erase(std::remove(line.begin(), line.end(), ' '), line.end());
             std::cout<<"'"<<line<<"'"<<'\n';
