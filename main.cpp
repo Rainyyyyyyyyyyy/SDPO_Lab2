@@ -3,7 +3,7 @@
 #include <new>
 #include <iostream>
 
-#include <QDebug>
+//#include <QDebug>
 // @see https://github.com/endurodave/Allocator
 
 // On VisualStudio, to disable the debug heap for faster performance when using

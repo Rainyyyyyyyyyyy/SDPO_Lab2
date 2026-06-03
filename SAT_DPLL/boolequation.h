@@ -30,8 +30,10 @@ public:
     bool Rule5Col1(BBV vector);
     void Simplify(int ixCol, char value);
 
+    // установщик стратегии
     bool SetBranchingStrategy(std::shared_ptr<BranchingStrategy> strategy);
 
+    // теперь использует стратегию std::shared_ptr<BranchingStrategy> strategy
     int ChooseColForBranching();
 };
 
