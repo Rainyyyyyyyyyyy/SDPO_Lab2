@@ -1,0 +1,2717 @@
+{
+  "version": 2,
+  "warnings": [
+    {
+      "analyzedSourceFiles": [
+        "|?|\\..\\Allocator\\Allocator.cpp"
+      ],
+      "code": "V677",
+      "falseAlarm": false,
+      "level": 2,
+      "message": "Custom declaration of a standard 'INT8' type. The declaration from system header files should be used instead.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 7,
+          "endLine": 7,
+          "file": "|?|\\..\\Allocator\\DataTypes.h",
+          "navigation": {
+            "previousLine": 43,
+            "currentLine": 193985275,
+            "nextLine": 1551890267,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "CERT-DCL37-C",
+      "projects": []
+    },
+    {
+      "analyzedSourceFiles": [
+        "|?|\\..\\Allocator\\Allocator.cpp"
+      ],
+      "code": "V677",
+      "falseAlarm": false,
+      "level": 2,
+      "message": "Custom declaration of a standard 'UINT8' type. The declaration from system header files should be used instead.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 8,
+          "endLine": 8,
+          "file": "|?|\\..\\Allocator\\DataTypes.h",
+          "navigation": {
+            "previousLine": 193985275,
+            "currentLine": 1551890267,
+            "nextLine": 775923955,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "CERT-DCL37-C",
+      "projects": []
+    },
+    {
+      "analyzedSourceFiles": [
+        "|?|\\..\\Allocator\\Allocator.cpp"
+      ],
+      "code": "V677",
+      "falseAlarm": false,
+      "level": 2,
+      "message": "Custom declaration of a standard 'INT16' type. The declaration from system header files should be used instead.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 9,
+          "endLine": 9,
+          "file": "|?|\\..\\Allocator\\DataTypes.h",
+          "navigation": {
+            "previousLine": 1551890267,
+            "currentLine": 775923955,
+            "nextLine": 1912558770,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "CERT-DCL37-C",
+      "projects": []
+    },
+    {
+      "analyzedSourceFiles": [
+        "|?|\\..\\Allocator\\Allocator.cpp"
+      ],
+      "code": "V677",
+      "falseAlarm": false,
+      "level": 2,
+      "message": "Custom declaration of a standard 'UINT16' type. The declaration from system header files should be used instead.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 10,
+          "endLine": 10,
+          "file": "|?|\\..\\Allocator\\DataTypes.h",
+          "navigation": {
+            "previousLine": 775923955,
+            "currentLine": 1912558770,
+            "nextLine": 1551885491,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "CERT-DCL37-C",
+      "projects": []
+    },
+    {
+      "analyzedSourceFiles": [
+        "|?|\\..\\Allocator\\Allocator.cpp"
+      ],
+      "code": "V677",
+      "falseAlarm": false,
+      "level": 2,
+      "message": "Custom declaration of a standard 'UINT32' type. The declaration from system header files should be used instead.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 11,
+          "endLine": 11,
+          "file": "|?|\\..\\Allocator\\DataTypes.h",
+          "navigation": {
+            "previousLine": 1912558770,
+            "currentLine": 1551885491,
+            "nextLine": 3024115,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "CERT-DCL37-C",
+      "projects": []
+    },
+    {
+      "analyzedSourceFiles": [
+        "|?|\\..\\Allocator\\Allocator.cpp"
+      ],
+      "code": "V677",
+      "falseAlarm": false,
+      "level": 2,
+      "message": "Custom declaration of a standard 'INT32' type. The declaration from system header files should be used instead.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 12,
+          "endLine": 12,
+          "file": "|?|\\..\\Allocator\\DataTypes.h",
+          "navigation": {
+            "previousLine": 1551885491,
+            "currentLine": 3024115,
+            "nextLine": 3026667,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "CERT-DCL37-C",
+      "projects": []
+    },
+    {
+      "analyzedSourceFiles": [
+        "|?|\\..\\Allocator\\Allocator.cpp"
+      ],
+      "code": "V677",
+      "falseAlarm": false,
+      "level": 2,
+      "message": "Custom declaration of a standard 'CHAR' type. The declaration from system header files should be used instead.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 13,
+          "endLine": 13,
+          "file": "|?|\\..\\Allocator\\DataTypes.h",
+          "navigation": {
+            "previousLine": 3024115,
+            "currentLine": 3026667,
+            "nextLine": 12122691,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "CERT-DCL37-C",
+      "projects": []
+    },
+    {
+      "analyzedSourceFiles": [
+        "|?|\\..\\Allocator\\Allocator.cpp"
+      ],
+      "code": "V677",
+      "falseAlarm": false,
+      "level": 2,
+      "message": "Custom declaration of a standard 'SHORT' type. The declaration from system header files should be used instead.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 14,
+          "endLine": 14,
+          "file": "|?|\\..\\Allocator\\DataTypes.h",
+          "navigation": {
+            "previousLine": 3026667,
+            "currentLine": 12122691,
+            "nextLine": 3023829,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "CERT-DCL37-C",
+      "projects": []
+    },
+    {
+      "analyzedSourceFiles": [
+        "|?|\\..\\Allocator\\Allocator.cpp"
+      ],
+      "code": "V677",
+      "falseAlarm": false,
+      "level": 2,
+      "message": "Custom declaration of a standard 'LONG' type. The declaration from system header files should be used instead.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 15,
+          "endLine": 15,
+          "file": "|?|\\..\\Allocator\\DataTypes.h",
+          "navigation": {
+            "previousLine": 12122691,
+            "currentLine": 3023829,
+            "nextLine": 756003,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "CERT-DCL37-C",
+      "projects": []
+    },
+    {
+      "analyzedSourceFiles": [
+        "|?|\\..\\Allocator\\Allocator.cpp"
+      ],
+      "code": "V677",
+      "falseAlarm": false,
+      "level": 2,
+      "message": "Custom declaration of a standard 'INT' type. The declaration from system header files should be used instead.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 16,
+          "endLine": 16,
+          "file": "|?|\\..\\Allocator\\DataTypes.h",
+          "navigation": {
+            "previousLine": 3023829,
+            "currentLine": 756003,
+            "nextLine": 387971379,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "CERT-DCL37-C",
+      "projects": []
+    },
+    {
+      "analyzedSourceFiles": [
+        "|?|\\..\\Allocator\\Allocator.cpp"
+      ],
+      "code": "V677",
+      "falseAlarm": false,
+      "level": 2,
+      "message": "Custom declaration of a standard 'UINT' type. The declaration from system header files should be used instead.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 17,
+          "endLine": 17,
+          "file": "|?|\\..\\Allocator\\DataTypes.h",
+          "navigation": {
+            "previousLine": 756003,
+            "currentLine": 387971379,
+            "nextLine": 1551888307,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "CERT-DCL37-C",
+      "projects": []
+    },
+    {
+      "analyzedSourceFiles": [
+        "|?|\\..\\Allocator\\Allocator.cpp"
+      ],
+      "code": "V677",
+      "falseAlarm": false,
+      "level": 2,
+      "message": "Custom declaration of a standard 'DWORD' type. The declaration from system header files should be used instead.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 18,
+          "endLine": 18,
+          "file": "|?|\\..\\Allocator\\DataTypes.h",
+          "navigation": {
+            "previousLine": 387971379,
+            "currentLine": 1551888307,
+            "nextLine": 775944713,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "CERT-DCL37-C",
+      "projects": []
+    },
+    {
+      "analyzedSourceFiles": [
+        "|?|\\..\\Allocator\\Allocator.cpp"
+      ],
+      "code": "V677",
+      "falseAlarm": false,
+      "level": 2,
+      "message": "Custom declaration of a standard 'BYTE' type. The declaration from system header files should be used instead.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 19,
+          "endLine": 19,
+          "file": "|?|\\..\\Allocator\\DataTypes.h",
+          "navigation": {
+            "previousLine": 1551888307,
+            "currentLine": 775944713,
+            "nextLine": 1551881587,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "CERT-DCL37-C",
+      "projects": []
+    },
+    {
+      "analyzedSourceFiles": [
+        "|?|\\..\\Allocator\\Allocator.cpp"
+      ],
+      "code": "V677",
+      "falseAlarm": false,
+      "level": 2,
+      "message": "Custom declaration of a standard 'WORD' type. The declaration from system header files should be used instead.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 20,
+          "endLine": 20,
+          "file": "|?|\\..\\Allocator\\DataTypes.h",
+          "navigation": {
+            "previousLine": 775944713,
+            "currentLine": 1551881587,
+            "nextLine": 12103023,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "CERT-DCL37-C",
+      "projects": []
+    },
+    {
+      "analyzedSourceFiles": [
+        "|?|\\..\\Allocator\\Allocator.cpp"
+      ],
+      "code": "V677",
+      "falseAlarm": false,
+      "level": 2,
+      "message": "Custom declaration of a standard 'FLOAT' type. The declaration from system header files should be used instead.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 21,
+          "endLine": 21,
+          "file": "|?|\\..\\Allocator\\DataTypes.h",
+          "navigation": {
+            "previousLine": 1551881587,
+            "currentLine": 12103023,
+            "nextLine": 48425121,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "CERT-DCL37-C",
+      "projects": []
+    },
+    {
+      "analyzedSourceFiles": [
+        "|?|\\..\\Allocator\\Allocator.cpp"
+      ],
+      "code": "V122",
+      "falseAlarm": false,
+      "level": 3,
+      "message": "Memsize type is used in the struct/class.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 69,
+          "endLine": 69,
+          "file": "|?|\\..\\Allocator\\Allocator.h",
+          "navigation": {
+            "previousLine": 123,
+            "currentLine": 207611,
+            "nextLine": 193,
+            "columns": 0
+          }
+        }
+      ],
+      "projects": []
+    },
+    {
+      "analyzedSourceFiles": [
+        "|?|\\..\\Allocator\\Allocator.cpp"
+      ],
+      "code": "V104",
+      "falseAlarm": false,
+      "level": 2,
+      "message": "Implicit conversion of 'Objects' to memsize type in an arithmetic expression: sizeof (T) * Objects",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 97,
+          "endLine": 97,
+          "file": "|?|\\..\\Allocator\\Allocator.h",
+          "navigation": {
+            "previousLine": 11496,
+            "currentLine": 201931969,
+            "nextLine": 193,
+            "columns": 0
+          }
+        }
+      ],
+      "projects": []
+    },
+    {
+      "analyzedSourceFiles": [
+        "|?|\\..\\Allocator\\Allocator.cpp"
+      ],
+      "code": "V3502",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "Size of the 'm_memory' array should be explicitly specified.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 97,
+          "endLine": 97,
+          "file": "|?|\\..\\Allocator\\Allocator.h",
+          "navigation": {
+            "previousLine": 11496,
+            "currentLine": 201931969,
+            "nextLine": 193,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "AUTOSAR-A3-1-4",
+      "projects": []
+    },
+    {
+      "code": "V104",
+      "falseAlarm": false,
+      "level": 2,
+      "message": "Implicit conversion of 'm_maxObjects' to memsize type in an arithmetic expression: m_blockSize * m_maxObjects",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 32,
+          "endLine": 32,
+          "file": "|?|\\..\\Allocator\\Allocator.cpp",
+          "navigation": {
+            "previousLine": 123,
+            "currentLine": 168752405,
+            "nextLine": -1479946105,
+            "columns": 0
+          }
+        }
+      ],
+      "projects": []
+    },
+    {
+      "code": "V2511",
+      "falseAlarm": false,
+      "level": 2,
+      "message": "The 'new' operator should not be used.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 32,
+          "endLine": 32,
+          "file": "|?|\\..\\Allocator\\Allocator.cpp",
+          "navigation": {
+            "previousLine": 123,
+            "currentLine": 168752405,
+            "nextLine": -1479946105,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-2008-18-4-1",
+      "projects": []
+    },
+    {
+      "code": "V2533",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "C-style and functional notation casts should not be performed.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 32,
+          "endLine": 32,
+          "file": "|?|\\..\\Allocator\\Allocator.cpp",
+          "navigation": {
+            "previousLine": 123,
+            "currentLine": 168752405,
+            "nextLine": -1479946105,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-2008-5-2-4",
+      "projects": []
+    },
+    {
+      "code": "V2005",
+      "falseAlarm": false,
+      "level": 2,
+      "message": "C-style explicit type casting is utilized. Consider using: static_cast/const_cast/reinterpret_cast.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 32,
+          "endLine": 32,
+          "file": "|?|\\..\\Allocator\\Allocator.cpp",
+          "navigation": {
+            "previousLine": 123,
+            "currentLine": 168752405,
+            "nextLine": -1479946105,
+            "columns": 0
+          }
+        }
+      ],
+      "projects": []
+    },
+    {
+      "code": "V3504",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "The body of the 'else' branch should be enclosed in braces.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 36,
+          "endLine": 36,
+          "file": "|?|\\..\\Allocator\\Allocator.cpp",
+          "navigation": {
+            "previousLine": 125,
+            "currentLine": 539,
+            "nextLine": -1624815653,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "AUTOSAR-M6-3-1, AUTOSAR-M6-4-1",
+      "projects": []
+    },
+    {
+      "code": "V2511",
+      "falseAlarm": false,
+      "level": 2,
+      "message": "The 'delete' operator should not be used.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 48,
+          "endLine": 48,
+          "file": "|?|\\..\\Allocator\\Allocator.cpp",
+          "navigation": {
+            "previousLine": 1334993054,
+            "currentLine": 2254695,
+            "nextLine": 1045005821,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-2008-18-4-1",
+      "projects": []
+    },
+    {
+      "code": "V3546",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "Pointer to void should not be converted to a pointer to object. Consider inspecting the expression: '(CHAR *) Pop()'.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 52,
+          "endLine": 52,
+          "file": "|?|\\..\\Allocator\\Allocator.cpp",
+          "navigation": {
+            "previousLine": 676749,
+            "currentLine": 71866617,
+            "nextLine": 125,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "AUTOSAR-M5-2-8, AUTOSAR-M5-2-9",
+      "projects": []
+    },
+    {
+      "code": "V3504",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "The body of the 'while' statement should be enclosed in braces.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 51,
+          "endLine": 51,
+          "file": "|?|\\..\\Allocator\\Allocator.cpp",
+          "navigation": {
+            "previousLine": 123,
+            "currentLine": 676749,
+            "nextLine": 71866617,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "AUTOSAR-M6-3-1, AUTOSAR-M6-4-1",
+      "projects": []
+    },
+    {
+      "code": "V3511",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "The 'if' ... 'else if' construct should be terminated with an 'else' statement.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 49,
+          "endLine": 49,
+          "file": "|?|\\..\\Allocator\\Allocator.cpp",
+          "navigation": {
+            "previousLine": 2254695,
+            "currentLine": 1045005821,
+            "nextLine": 123,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "AUTOSAR-M6-4-2",
+      "projects": []
+    },
+    {
+      "code": "V3504",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "The body of the 'if' statement should be enclosed in braces.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 47,
+          "endLine": 47,
+          "file": "|?|\\..\\Allocator\\Allocator.cpp",
+          "navigation": {
+            "previousLine": 1206570256,
+            "currentLine": 1334993054,
+            "nextLine": 2254695,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "AUTOSAR-M6-3-1, AUTOSAR-M6-4-1",
+      "projects": []
+    },
+    {
+      "code": "V3551",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "The string literal should not decay to a pointer to char. Consider inspecting the first function argument.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 61,
+          "endLine": 61,
+          "file": "|?|\\..\\Allocator\\Allocator.cpp",
+          "navigation": {
+            "previousLine": 123,
+            "currentLine": 834040668,
+            "nextLine": 0,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "AUTOSAR-M5-2-12",
+      "projects": []
+    },
+    {
+      "code": "V3551",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "The string literal should not decay to a pointer to char. Consider inspecting the second function argument.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 61,
+          "endLine": 61,
+          "file": "|?|\\..\\Allocator\\Allocator.cpp",
+          "navigation": {
+            "previousLine": 123,
+            "currentLine": 834040668,
+            "nextLine": 0,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "AUTOSAR-M5-2-12",
+      "projects": []
+    },
+    {
+      "code": "V3519",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "The comma operator should not be used.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 61,
+          "endLine": 61,
+          "file": "|?|\\..\\Allocator\\Allocator.cpp",
+          "navigation": {
+            "previousLine": 123,
+            "currentLine": 834040668,
+            "nextLine": 0,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "AUTOSAR-M5-18-1",
+      "projects": []
+    },
+    {
+      "code": "V3545",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "Operands of the '||' operator should have bool essential type.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 61,
+          "endLine": 61,
+          "file": "|?|\\..\\Allocator\\Allocator.cpp",
+          "navigation": {
+            "previousLine": 123,
+            "currentLine": 834040668,
+            "nextLine": 0,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "AUTOSAR-M5-3-1",
+      "projects": []
+    },
+    {
+      "code": "V104",
+      "falseAlarm": false,
+      "level": 2,
+      "message": "Implicit conversion of 'm_poolIndex ++' to memsize type in an arithmetic expression: m_poolIndex ++ * m_blockSize",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 74,
+          "endLine": 74,
+          "file": "|?|\\..\\Allocator\\Allocator.cpp",
+          "navigation": {
+            "previousLine": 123,
+            "currentLine": -668360597,
+            "nextLine": 125,
+            "columns": 0
+          }
+        }
+      ],
+      "projects": []
+    },
+    {
+      "code": "V3539",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "Array indexing should be the only form of pointer arithmetic and it should be applied only to objects defined as an array type.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 74,
+          "endLine": 74,
+          "file": "|?|\\..\\Allocator\\Allocator.cpp",
+          "navigation": {
+            "previousLine": 123,
+            "currentLine": -668360597,
+            "nextLine": 125,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "AUTOSAR-M5-0-15",
+      "projects": []
+    },
+    {
+      "code": "V3527",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "The return value of non-void function 'set_new_handler' should be used.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 80,
+          "endLine": 80,
+          "file": "|?|\\..\\Allocator\\Allocator.cpp",
+          "navigation": {
+            "previousLine": -971682012,
+            "currentLine": -813581373,
+            "nextLine": 0,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "AUTOSAR-A0-1-2",
+      "projects": []
+    },
+    {
+      "code": "V3545",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "Operands of the '!' operator should have bool essential type.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 86,
+          "endLine": 86,
+          "file": "|?|\\..\\Allocator\\Allocator.cpp",
+          "navigation": {
+            "previousLine": 539,
+            "currentLine": 39209,
+            "nextLine": 125,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "AUTOSAR-M5-3-1",
+      "projects": []
+    },
+    {
+      "code": "V3546",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "Pointer to void should not be converted to a pointer to object. Consider inspecting the expression: '(Block *) pMemory'.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 117,
+          "endLine": 117,
+          "file": "|?|\\..\\Allocator\\Allocator.cpp",
+          "navigation": {
+            "previousLine": 123,
+            "currentLine": 1418861135,
+            "nextLine": 138466463,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "AUTOSAR-M5-2-8, AUTOSAR-M5-2-9",
+      "projects": []
+    },
+    {
+      "analyzedSourceFiles": [
+        "|?|\\..\\Allocator\\Allocator.cpp"
+      ],
+      "code": "V126",
+      "falseAlarm": false,
+      "level": 3,
+      "message": "Be advised that the size of the type 'long' varies between LLP64/LP64 data models.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 15,
+          "endLine": 15,
+          "file": "|?|\\..\\Allocator\\DataTypes.h",
+          "navigation": {
+            "previousLine": 12122691,
+            "currentLine": 3023829,
+            "nextLine": 756003,
+            "columns": 0
+          }
+        }
+      ],
+      "projects": []
+    },
+    {
+      "analyzedSourceFiles": [
+        "|?|\\..\\Allocator\\Allocator.cpp"
+      ],
+      "code": "V730",
+      "cwe": 457,
+      "falseAlarm": false,
+      "level": 1,
+      "message": "Not all members of a class are initialized inside the constructor. Consider inspecting: m_memory.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 93,
+          "endLine": 93,
+          "file": "|?|\\..\\Allocator\\Allocator.h",
+          "navigation": {
+            "previousLine": 5816,
+            "currentLine": 1198105729,
+            "nextLine": 123,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "CERT-EXP53-CPP",
+      "projects": []
+    },
+    {
+      "analyzedSourceFiles": [
+        "|?|\\..\\Allocator\\Allocator.cpp"
+      ],
+      "code": "V3547",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "Identifiers that contain '__' or start with '_[A-Z]' are reserved. Consider inspecting the '__ALLOCATOR_H' identifier.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 2,
+          "endLine": 2,
+          "file": "|?|\\..\\Allocator\\Allocator.h",
+          "navigation": {
+            "previousLine": 4153830,
+            "currentLine": 82406,
+            "nextLine": 0,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "AUTOSAR-A17-0-1",
+      "projects": []
+    },
+    {
+      "analyzedSourceFiles": [
+        "|?|\\..\\Allocator\\Allocator.cpp"
+      ],
+      "code": "V3547",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "Identifiers that contain '__' or start with '_[A-Z]' are reserved. Consider inspecting the '_DATA_TYPES_H' identifier.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 2,
+          "endLine": 2,
+          "file": "|?|\\..\\Allocator\\DataTypes.h",
+          "navigation": {
+            "previousLine": 4164146,
+            "currentLine": 109106,
+            "nextLine": 0,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "AUTOSAR-A17-0-1",
+      "projects": []
+    },
+    {
+      "analyzedSourceFiles": [
+        "|?|\\..\\Allocator\\Allocator.cpp"
+      ],
+      "code": "V3549",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "The global namespace should only contain 'main', namespace declarations and extern 'C' declaration.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 18,
+          "endLine": 18,
+          "file": "|?|\\..\\Allocator\\DataTypes.h",
+          "navigation": {
+            "previousLine": 387971379,
+            "currentLine": 1551888307,
+            "nextLine": 775944713,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "AUTOSAR-M7-3-1",
+      "projects": []
+    },
+    {
+      "code": "Renew",
+      "falseAlarm": false,
+      "level": 0,
+      "message": "Your license will expire in 30 days. Click 'Renew' to learn more or contact us via the Feedback form on our website.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 1,
+          "endLine": 1,
+          "file": " ",
+          "navigation": {
+            "previousLine": 0,
+            "currentLine": 0,
+            "nextLine": 0,
+            "columns": 0
+          }
+        }
+      ],
+      "projects": []
+    },
+    {
+      "analyzedSourceFiles": [
+        "|?|\\..\\SAT_DPLL\\BBV.cpp"
+      ],
+      "code": "V690",
+      "falseAlarm": false,
+      "level": 2,
+      "message": "The 'X' class implements the copy assignment operator, but lacks a copy constructor. It is dangerous to use such a class.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 9,
+          "endLine": 9,
+          "file": "|?|\\..\\SAT_DPLL\\BBV.h",
+          "navigation": {
+            "previousLine": 0,
+            "currentLine": 2266,
+            "nextLine": 123,
+            "columns": 0
+          }
+        }
+      ],
+      "projects": []
+    },
+    {
+      "analyzedSourceFiles": [
+        "|?|\\..\\SAT_DPLL\\BBV.cpp"
+      ],
+      "code": "V302",
+      "falseAlarm": false,
+      "level": 2,
+      "message": "Member operator[] of 'BBV' class has a 32-bit type argument. Use memsize-type here.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 46,
+          "endLine": 46,
+          "file": "|?|\\..\\SAT_DPLL\\BBV.h",
+          "navigation": {
+            "previousLine": 264447717,
+            "currentLine": 256500607,
+            "nextLine": 8999957,
+            "columns": 0
+          }
+        }
+      ],
+      "projects": []
+    },
+    {
+      "code": "V809",
+      "falseAlarm": false,
+      "level": 3,
+      "message": "Verifying that a pointer value is not NULL is not required. The 'if (vec != __null)' check can be removed.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 8,
+          "endLine": 8,
+          "file": "|?|\\..\\SAT_DPLL\\BBV.cpp",
+          "navigation": {
+            "previousLine": 123,
+            "currentLine": 372905,
+            "nextLine": 140841,
+            "columns": 0
+          }
+        }
+      ],
+      "projects": []
+    },
+    {
+      "code": "V121",
+      "falseAlarm": false,
+      "level": 2,
+      "message": "Implicit conversion of the type of 'new' operator's argument to size_t type.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 23,
+          "endLine": 23,
+          "file": "|?|\\..\\SAT_DPLL\\BBV.cpp",
+          "navigation": {
+            "previousLine": 123,
+            "currentLine": -1008270789,
+            "nextLine": 11933293,
+            "columns": 0
+          }
+        }
+      ],
+      "projects": []
+    },
+    {
+      "code": "V108",
+      "falseAlarm": false,
+      "level": 2,
+      "message": "Incorrect index type: vec[not a memsize-type]. Use memsize type instead.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 29,
+          "endLine": 29,
+          "file": "|?|\\..\\SAT_DPLL\\BBV.cpp",
+          "navigation": {
+            "previousLine": 644007517,
+            "currentLine": 21495,
+            "nextLine": 125,
+            "columns": 0
+          }
+        }
+      ],
+      "projects": []
+    },
+    {
+      "code": "V3504",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "The body of the 'for' statement should be enclosed in braces.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 28,
+          "endLine": 28,
+          "file": "|?|\\..\\SAT_DPLL\\BBV.cpp",
+          "navigation": {
+            "previousLine": 45342757,
+            "currentLine": 644007517,
+            "nextLine": 21495,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "AUTOSAR-M6-3-1, AUTOSAR-M6-4-1",
+      "projects": []
+    },
+    {
+      "code": "V668",
+      "cwe": 571,
+      "falseAlarm": false,
+      "level": 2,
+      "message": "There is no sense in testing the 'vec' pointer against null, as the memory was allocated using the 'new' operator. The exception will be generated in the case of memory allocation error.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 24,
+          "endLine": 24,
+          "file": "|?|\\..\\SAT_DPLL\\BBV.cpp",
+          "navigation": {
+            "previousLine": -1008270789,
+            "currentLine": 11933293,
+            "nextLine": 123,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "CERT-MEM52-CPP",
+      "projects": []
+    },
+    {
+      "code": "V3508",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "The function with the 'strlen' name should not be used.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 42,
+          "endLine": 42,
+          "file": "|?|\\..\\SAT_DPLL\\BBV.cpp",
+          "navigation": {
+            "previousLine": 123,
+            "currentLine": 18729287,
+            "nextLine": 5650469,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "AUTOSAR-M18-0-5",
+      "projects": []
+    },
+    {
+      "code": "V103",
+      "falseAlarm": false,
+      "level": 2,
+      "message": "Implicit type conversion from memsize to 32-bit type.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 42,
+          "endLine": 42,
+          "file": "|?|\\..\\SAT_DPLL\\BBV.cpp",
+          "navigation": {
+            "previousLine": 123,
+            "currentLine": 18729287,
+            "nextLine": 5650469,
+            "columns": 0
+          }
+        }
+      ],
+      "projects": []
+    },
+    {
+      "code": "V108",
+      "falseAlarm": false,
+      "level": 2,
+      "message": "Incorrect index type: str[not a memsize-type]. Use memsize type instead.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 54,
+          "endLine": 54,
+          "file": "|?|\\..\\SAT_DPLL\\BBV.cpp",
+          "navigation": {
+            "previousLine": 123,
+            "currentLine": 1495727,
+            "nextLine": 338905,
+            "columns": 0
+          }
+        }
+      ],
+      "projects": []
+    },
+    {
+      "code": "V108",
+      "falseAlarm": false,
+      "level": 2,
+      "message": "Incorrect index type: V.vec[not a memsize-type]. Use memsize type instead.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 86,
+          "endLine": 86,
+          "file": "|?|\\..\\SAT_DPLL\\BBV.cpp",
+          "navigation": {
+            "previousLine": 161001867,
+            "currentLine": 2720749,
+            "nextLine": 125,
+            "columns": 0
+          }
+        }
+      ],
+      "projects": []
+    },
+    {
+      "code": "V2009",
+      "falseAlarm": false,
+      "level": 3,
+      "message": "Consider passing the 'V' argument as a reference to const.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 226,
+          "endLine": 226,
+          "file": "|?|\\..\\SAT_DPLL\\BBV.cpp",
+          "navigation": {
+            "previousLine": 0,
+            "currentLine": -1987522739,
+            "nextLine": 123,
+            "columns": 0
+          }
+        }
+      ],
+      "projects": []
+    },
+    {
+      "code": "V2506",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "A function should have a single point of exit at the end.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 226,
+          "endLine": 226,
+          "file": "|?|\\..\\SAT_DPLL\\BBV.cpp",
+          "navigation": {
+            "previousLine": 0,
+            "currentLine": -1987522739,
+            "nextLine": 123,
+            "columns": 0
+          }
+        },
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 232,
+          "endLine": 232,
+          "file": "|?|\\..\\SAT_DPLL\\BBV.cpp",
+          "navigation": {
+            "previousLine": 0,
+            "currentLine": 0,
+            "nextLine": 0,
+            "columns": 0
+          }
+        },
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 233,
+          "endLine": 233,
+          "file": "|?|\\..\\SAT_DPLL\\BBV.cpp",
+          "navigation": {
+            "previousLine": 0,
+            "currentLine": 0,
+            "nextLine": 0,
+            "columns": 0
+          }
+        },
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 235,
+          "endLine": 235,
+          "file": "|?|\\..\\SAT_DPLL\\BBV.cpp",
+          "navigation": {
+            "previousLine": 0,
+            "currentLine": 0,
+            "nextLine": 0,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-2008-6-6-5",
+      "projects": []
+    },
+    {
+      "code": "V108",
+      "falseAlarm": false,
+      "level": 2,
+      "message": "Incorrect index type: res.vec[not a memsize-type]. Use memsize type instead.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 244,
+          "endLine": 244,
+          "file": "|?|\\..\\SAT_DPLL\\BBV.cpp",
+          "navigation": {
+            "previousLine": 644007517,
+            "currentLine": 1925317100,
+            "nextLine": 44089,
+            "columns": 0
+          }
+        }
+      ],
+      "projects": []
+    },
+    {
+      "code": "V1064",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "The 'k' operand of the modulo operation is less than the '8' operand. The result is always equal to the left operand.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 314,
+          "endLine": 314,
+          "file": "|?|\\..\\SAT_DPLL\\BBV.cpp",
+          "navigation": {
+            "previousLine": 113,
+            "currentLine": 6037,
+            "nextLine": 123,
+            "columns": 0
+          }
+        }
+      ],
+      "projects": []
+    },
+    {
+      "code": "V2015",
+      "falseAlarm": false,
+      "level": 2,
+      "message": "The 'k' identifier declared in the inner scope hides the identifier declared in the outer scope.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 316,
+          "endLine": 316,
+          "file": "|?|\\..\\SAT_DPLL\\BBV.cpp",
+          "navigation": {
+            "previousLine": 123,
+            "currentLine": 1245793,
+            "nextLine": 48574041,
+            "columns": 0
+          }
+        },
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 293,
+          "endLine": 293,
+          "file": "|?|\\..\\SAT_DPLL\\BBV.cpp",
+          "navigation": {
+            "previousLine": 0,
+            "currentLine": 0,
+            "nextLine": 0,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "CERT-DCL01-C",
+      "projects": []
+    },
+    {
+      "code": "V668",
+      "cwe": 571,
+      "falseAlarm": false,
+      "level": 2,
+      "message": "There is no sense in testing the 'str' pointer against null, as the memory was allocated using the 'new' operator. The exception will be generated in the case of memory allocation error.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 364,
+          "endLine": 364,
+          "file": "|?|\\..\\SAT_DPLL\\BBV.cpp",
+          "navigation": {
+            "previousLine": -2111072507,
+            "currentLine": 369449,
+            "nextLine": 123,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "CERT-MEM52-CPP",
+      "projects": []
+    },
+    {
+      "code": "V591",
+      "cwe": 393,
+      "falseAlarm": false,
+      "level": 1,
+      "message": "Non-void function should return a value.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 477,
+          "endLine": 477,
+          "file": "|?|\\..\\SAT_DPLL\\BBV.cpp",
+          "navigation": {
+            "previousLine": 5597,
+            "currentLine": 125,
+            "nextLine": 0,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "CERT-MSC52-CPP",
+      "projects": []
+    },
+    {
+      "code": "V3525",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "Function with a non-void return type should return a value from all exit paths.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 477,
+          "endLine": 477,
+          "file": "|?|\\..\\SAT_DPLL\\BBV.cpp",
+          "navigation": {
+            "previousLine": 5597,
+            "currentLine": 125,
+            "nextLine": 0,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "AUTOSAR-A8-4-2",
+      "projects": []
+    },
+    {
+      "code": "V2009",
+      "falseAlarm": false,
+      "level": 3,
+      "message": "Consider passing the 'v' argument as a reference to const.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 464,
+          "endLine": 464,
+          "file": "|?|\\..\\SAT_DPLL\\BBV.cpp",
+          "navigation": {
+            "previousLine": 0,
+            "currentLine": 15932093,
+            "nextLine": 123,
+            "columns": 0
+          }
+        }
+      ],
+      "projects": []
+    },
+    {
+      "code": "V755",
+      "cwe": 123,
+      "falseAlarm": false,
+      "level": 2,
+      "message": "Copying potentially tainted data from 'std::cin' to buffer 'str'. Buffer overflow is possible.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 522,
+          "endLine": 522,
+          "file": "|?|\\..\\SAT_DPLL\\BBV.cpp",
+          "navigation": {
+            "previousLine": 36292039,
+            "currentLine": 19127,
+            "nextLine": 187825,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "CERT-STR31-C",
+      "projects": []
+    },
+    {
+      "code": "V1077",
+      "cwe": 457,
+      "falseAlarm": false,
+      "level": 2,
+      "message": "Conditional initialization inside the 'X' constructor may leave some members uninitialized. Inspect the following: ptr, index.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 423,
+          "endLine": 423,
+          "file": "|?|\\..\\SAT_DPLL\\BBV.cpp",
+          "navigation": {
+            "previousLine": 0,
+            "currentLine": 1079325773,
+            "nextLine": 123,
+            "columns": 0
+          }
+        },
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 427,
+          "endLine": 427,
+          "file": "|?|\\..\\SAT_DPLL\\BBV.cpp",
+          "navigation": {
+            "previousLine": 0,
+            "currentLine": 0,
+            "nextLine": 0,
+            "columns": 0
+          }
+        },
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 428,
+          "endLine": 428,
+          "file": "|?|\\..\\SAT_DPLL\\BBV.cpp",
+          "navigation": {
+            "previousLine": 0,
+            "currentLine": 0,
+            "nextLine": 0,
+            "columns": 0
+          }
+        }
+      ],
+      "projects": []
+    },
+    {
+      "code": "V1077",
+      "cwe": 457,
+      "falseAlarm": false,
+      "level": 2,
+      "message": "Conditional initialization inside the 'BBV' constructor may leave some members uninitialized. Inspect the following: vec, len, size.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 19,
+          "endLine": 19,
+          "file": "|?|\\..\\SAT_DPLL\\BBV.cpp",
+          "navigation": {
+            "previousLine": 0,
+            "currentLine": 29844177,
+            "nextLine": 123,
+            "columns": 0
+          }
+        },
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 23,
+          "endLine": 23,
+          "file": "|?|\\..\\SAT_DPLL\\BBV.cpp",
+          "navigation": {
+            "previousLine": 0,
+            "currentLine": 0,
+            "nextLine": 0,
+            "columns": 0
+          }
+        },
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 26,
+          "endLine": 26,
+          "file": "|?|\\..\\SAT_DPLL\\BBV.cpp",
+          "navigation": {
+            "previousLine": 0,
+            "currentLine": 0,
+            "nextLine": 0,
+            "columns": 0
+          }
+        },
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 27,
+          "endLine": 27,
+          "file": "|?|\\..\\SAT_DPLL\\BBV.cpp",
+          "navigation": {
+            "previousLine": 0,
+            "currentLine": 0,
+            "nextLine": 0,
+            "columns": 0
+          }
+        }
+      ],
+      "projects": []
+    },
+    {
+      "code": "V1077",
+      "cwe": 457,
+      "falseAlarm": false,
+      "level": 2,
+      "message": "Conditional initialization inside the 'BBV' constructor may leave some members uninitialized. Inspect the following: len, size, vec.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 38,
+          "endLine": 38,
+          "file": "|?|\\..\\SAT_DPLL\\BBV.cpp",
+          "navigation": {
+            "previousLine": 0,
+            "currentLine": 477594917,
+            "nextLine": 123,
+            "columns": 0
+          }
+        },
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 42,
+          "endLine": 42,
+          "file": "|?|\\..\\SAT_DPLL\\BBV.cpp",
+          "navigation": {
+            "previousLine": 0,
+            "currentLine": 0,
+            "nextLine": 0,
+            "columns": 0
+          }
+        },
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 43,
+          "endLine": 43,
+          "file": "|?|\\..\\SAT_DPLL\\BBV.cpp",
+          "navigation": {
+            "previousLine": 0,
+            "currentLine": 0,
+            "nextLine": 0,
+            "columns": 0
+          }
+        },
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 44,
+          "endLine": 44,
+          "file": "|?|\\..\\SAT_DPLL\\BBV.cpp",
+          "navigation": {
+            "previousLine": 0,
+            "currentLine": 0,
+            "nextLine": 0,
+            "columns": 0
+          }
+        }
+      ],
+      "projects": []
+    },
+    {
+      "code": "V1077",
+      "cwe": 457,
+      "falseAlarm": false,
+      "level": 2,
+      "message": "Conditional initialization inside the 'BBV' constructor may leave some members uninitialized. Inspect the following: size, len, vec.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 76,
+          "endLine": 76,
+          "file": "|?|\\..\\SAT_DPLL\\BBV.cpp",
+          "navigation": {
+            "previousLine": 0,
+            "currentLine": 1864141,
+            "nextLine": 123,
+            "columns": 0
+          }
+        },
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 80,
+          "endLine": 80,
+          "file": "|?|\\..\\SAT_DPLL\\BBV.cpp",
+          "navigation": {
+            "previousLine": 0,
+            "currentLine": 0,
+            "nextLine": 0,
+            "columns": 0
+          }
+        },
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 81,
+          "endLine": 81,
+          "file": "|?|\\..\\SAT_DPLL\\BBV.cpp",
+          "navigation": {
+            "previousLine": 0,
+            "currentLine": 0,
+            "nextLine": 0,
+            "columns": 0
+          }
+        },
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 82,
+          "endLine": 82,
+          "file": "|?|\\..\\SAT_DPLL\\BBV.cpp",
+          "navigation": {
+            "previousLine": 0,
+            "currentLine": 0,
+            "nextLine": 0,
+            "columns": 0
+          }
+        }
+      ],
+      "projects": []
+    },
+    {
+      "analyzedSourceFiles": [
+        "|?|\\..\\SAT_DPLL\\boolinterval.cpp"
+      ],
+      "code": "V690",
+      "falseAlarm": false,
+      "level": 3,
+      "message": "The 'BoolInterval' class implements the copy assignment operator, but lacks a copy constructor. It is dangerous to use such a class.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 6,
+          "endLine": 6,
+          "file": "|?|\\..\\SAT_DPLL\\boolinterval.h",
+          "navigation": {
+            "previousLine": 0,
+            "currentLine": 4668214,
+            "nextLine": 123,
+            "columns": 0
+          }
+        }
+      ],
+      "projects": []
+    },
+    {
+      "code": "V107",
+      "falseAlarm": false,
+      "level": 2,
+      "message": "Implicit type conversion first argument 'len' of function 'BBV' to 32-bit type.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 7,
+          "endLine": 7,
+          "file": "|?|\\..\\SAT_DPLL\\boolinterval.cpp",
+          "navigation": {
+            "previousLine": 123,
+            "currentLine": 379321,
+            "nextLine": 307641,
+            "columns": 0
+          }
+        }
+      ],
+      "projects": []
+    },
+    {
+      "code": "V107",
+      "falseAlarm": false,
+      "level": 2,
+      "message": "Implicit type conversion first argument 'sz' of function 'BBV' to 32-bit type.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 28,
+          "endLine": 28,
+          "file": "|?|\\..\\SAT_DPLL\\boolinterval.cpp",
+          "navigation": {
+            "previousLine": 695061433,
+            "currentLine": 189657,
+            "nextLine": 153817,
+            "columns": 0
+          }
+        }
+      ],
+      "projects": []
+    },
+    {
+      "code": "V104",
+      "falseAlarm": false,
+      "level": 2,
+      "message": "Implicit conversion of 'ix' to memsize type in an arithmetic expression: ix < sz",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 32,
+          "endLine": 32,
+          "file": "|?|\\..\\SAT_DPLL\\boolinterval.cpp",
+          "navigation": {
+            "previousLine": 0,
+            "currentLine": 338393,
+            "nextLine": 47596493,
+            "columns": 0
+          }
+        }
+      ],
+      "projects": []
+    },
+    {
+      "code": "V108",
+      "falseAlarm": false,
+      "level": 2,
+      "message": "Incorrect index type: vector[not a memsize-type]. Use memsize type instead.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 33,
+          "endLine": 33,
+          "file": "|?|\\..\\SAT_DPLL\\boolinterval.cpp",
+          "navigation": {
+            "previousLine": 338393,
+            "currentLine": 47596493,
+            "nextLine": 35237,
+            "columns": 0
+          }
+        }
+      ],
+      "projects": []
+    },
+    {
+      "code": "V818",
+      "falseAlarm": false,
+      "level": 2,
+      "message": "It is more efficient to use an initialization list 'vec(vec_in), dnc(dnc_in)' rather than an assignment operator.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 44,
+          "endLine": 44,
+          "file": "|?|\\..\\SAT_DPLL\\boolinterval.cpp",
+          "navigation": {
+            "previousLine": 0,
+            "currentLine": -1618387588,
+            "nextLine": 123,
+            "columns": 0
+          }
+        },
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 46,
+          "endLine": 46,
+          "file": "|?|\\..\\SAT_DPLL\\boolinterval.cpp",
+          "navigation": {
+            "previousLine": 0,
+            "currentLine": 0,
+            "nextLine": 0,
+            "columns": 0
+          }
+        },
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 47,
+          "endLine": 47,
+          "file": "|?|\\..\\SAT_DPLL\\boolinterval.cpp",
+          "navigation": {
+            "previousLine": 0,
+            "currentLine": 0,
+            "nextLine": 0,
+            "columns": 0
+          }
+        }
+      ],
+      "projects": []
+    },
+    {
+      "code": "V2537",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "Functions should not have unused parameters. Consider inspecting the parameter: 'dnc'.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 51,
+          "endLine": 51,
+          "file": "|?|\\..\\SAT_DPLL\\boolinterval.cpp",
+          "navigation": {
+            "previousLine": 0,
+            "currentLine": -294258788,
+            "nextLine": 123,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-2008-0-1-11",
+      "projects": []
+    },
+    {
+      "code": "V2537",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "Functions should not have unused parameters. Consider inspecting the parameter: 'vec'.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 51,
+          "endLine": 51,
+          "file": "|?|\\..\\SAT_DPLL\\boolinterval.cpp",
+          "navigation": {
+            "previousLine": 0,
+            "currentLine": -294258788,
+            "nextLine": 123,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-2008-0-1-11",
+      "projects": []
+    },
+    {
+      "code": "V2009",
+      "falseAlarm": false,
+      "level": 3,
+      "message": "Consider passing the 'ibv' argument as a reference to const.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 56,
+          "endLine": 56,
+          "file": "|?|\\..\\SAT_DPLL\\boolinterval.cpp",
+          "navigation": {
+            "previousLine": 0,
+            "currentLine": 1180816494,
+            "nextLine": 123,
+            "columns": 0
+          }
+        }
+      ],
+      "projects": []
+    },
+    {
+      "code": "V101",
+      "falseAlarm": false,
+      "level": 2,
+      "message": "Implicit assignment type conversion to memsize type.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 76,
+          "endLine": 76,
+          "file": "|?|\\..\\SAT_DPLL\\boolinterval.cpp",
+          "navigation": {
+            "previousLine": 123,
+            "currentLine": 347536545,
+            "nextLine": -1026058816,
+            "columns": 0
+          }
+        }
+      ],
+      "projects": []
+    },
+    {
+      "code": "V820",
+      "falseAlarm": false,
+      "level": 3,
+      "message": "The 'zero' variable is not used after copying. Copying can be replaced with move/swap for optimization.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 103,
+          "endLine": 103,
+          "file": "|?|\\..\\SAT_DPLL\\boolinterval.cpp",
+          "navigation": {
+            "previousLine": 1015893,
+            "currentLine": 4153173,
+            "nextLine": 10702917,
+            "columns": 0
+          }
+        }
+      ],
+      "projects": []
+    },
+    {
+      "analyzedSourceFiles": [
+        "|?|\\..\\SAT_DPLL\\boolequation.cpp"
+      ],
+      "code": "V690",
+      "falseAlarm": false,
+      "level": 2,
+      "message": "The 'BoolEquation' class implements a copy constructor, but lacks the copy assignment operator. It is dangerous to use such a class.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 9,
+          "endLine": 9,
+          "file": "|?|\\..\\SAT_DPLL\\boolequation.h",
+          "navigation": {
+            "previousLine": 0,
+            "currentLine": 4668100,
+            "nextLine": 123,
+            "columns": 0
+          }
+        }
+      ],
+      "projects": []
+    },
+    {
+      "code": "V688",
+      "falseAlarm": false,
+      "level": 3,
+      "message": "The 'cnfSize' function argument possesses the same name as one of the class members, which can result in a confusion.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 9,
+          "endLine": 9,
+          "file": "|?|\\..\\SAT_DPLL\\boolequation.cpp",
+          "navigation": {
+            "previousLine": 0,
+            "currentLine": 2085503716,
+            "nextLine": 123,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "CERT-DCL01-C",
+      "projects": []
+    },
+    {
+      "code": "V108",
+      "falseAlarm": false,
+      "level": 2,
+      "message": "Incorrect index type: this->cnf[not a memsize-type]. Use memsize type instead.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 14,
+          "endLine": 14,
+          "file": "|?|\\..\\SAT_DPLL\\boolequation.cpp",
+          "navigation": {
+            "previousLine": -1718979731,
+            "currentLine": 45112605,
+            "nextLine": 125,
+            "columns": 0
+          }
+        }
+      ],
+      "projects": []
+    },
+    {
+      "code": "V108",
+      "falseAlarm": false,
+      "level": 2,
+      "message": "Incorrect index type: cnf[not a memsize-type]. Use memsize type instead.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 14,
+          "endLine": 14,
+          "file": "|?|\\..\\SAT_DPLL\\boolequation.cpp",
+          "navigation": {
+            "previousLine": -1718979731,
+            "currentLine": 45112605,
+            "nextLine": 125,
+            "columns": 0
+          }
+        }
+      ],
+      "projects": []
+    },
+    {
+      "code": "V818",
+      "falseAlarm": false,
+      "level": 2,
+      "message": "It is more efficient to use an initialization list 'mask(mask)' rather than an assignment operator.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 9,
+          "endLine": 9,
+          "file": "|?|\\..\\SAT_DPLL\\boolequation.cpp",
+          "navigation": {
+            "previousLine": 0,
+            "currentLine": 2085503716,
+            "nextLine": 123,
+            "columns": 0
+          }
+        },
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 20,
+          "endLine": 20,
+          "file": "|?|\\..\\SAT_DPLL\\boolequation.cpp",
+          "navigation": {
+            "previousLine": 0,
+            "currentLine": 0,
+            "nextLine": 0,
+            "columns": 0
+          }
+        }
+      ],
+      "projects": []
+    },
+    {
+      "code": "V820",
+      "falseAlarm": false,
+      "level": 3,
+      "message": "The 'mask' variable is not used after copying. Copying can be replaced with move/swap for optimization.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 20,
+          "endLine": 20,
+          "file": "|?|\\..\\SAT_DPLL\\boolequation.cpp",
+          "navigation": {
+            "previousLine": 11279635,
+            "currentLine": 2824985,
+            "nextLine": 125,
+            "columns": 0
+          }
+        }
+      ],
+      "projects": []
+    },
+    {
+      "code": "V108",
+      "falseAlarm": false,
+      "level": 2,
+      "message": "Incorrect index type: equation.cnf[not a memsize-type]. Use memsize type instead.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 28,
+          "endLine": 28,
+          "file": "|?|\\..\\SAT_DPLL\\boolequation.cpp",
+          "navigation": {
+            "previousLine": 363917918,
+            "currentLine": 1623180184,
+            "nextLine": 125,
+            "columns": 0
+          }
+        }
+      ],
+      "projects": []
+    },
+    {
+      "code": "V2530",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "The loop should be terminated with no more than one 'break' or 'goto' statement.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 65,
+          "endLine": 65,
+          "file": "|?|\\..\\SAT_DPLL\\boolequation.cpp",
+          "navigation": {
+            "previousLine": 805067069,
+            "currentLine": 321300097,
+            "nextLine": 1466101,
+            "columns": 0
+          }
+        },
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 73,
+          "endLine": 73,
+          "file": "|?|\\..\\SAT_DPLL\\boolequation.cpp",
+          "navigation": {
+            "previousLine": 0,
+            "currentLine": 0,
+            "nextLine": 0,
+            "columns": 0
+          }
+        },
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 77,
+          "endLine": 77,
+          "file": "|?|\\..\\SAT_DPLL\\boolequation.cpp",
+          "navigation": {
+            "previousLine": 0,
+            "currentLine": 0,
+            "nextLine": 0,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-2008-6-6-4",
+      "projects": []
+    },
+    {
+      "code": "V202",
+      "falseAlarm": false,
+      "level": 3,
+      "message": "Explicit conversion from memsize type to 32-bit integer type: static_cast<int> (indexes.size())",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 29,
+          "endLine": 29,
+          "file": "|?|\\..\\SAT_DPLL\\branchingstrategy.cpp",
+          "navigation": {
+            "previousLine": 332145,
+            "currentLine": -1990202821,
+            "nextLine": -1003678230,
+            "columns": 0
+          }
+        }
+      ],
+      "projects": []
+    },
+    {
+      "code": "V106",
+      "falseAlarm": false,
+      "level": 2,
+      "message": "Implicit type conversion first argument 'k' of function 'at' to memsize type.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 30,
+          "endLine": 30,
+          "file": "|?|\\..\\SAT_DPLL\\branchingstrategy.cpp",
+          "navigation": {
+            "previousLine": -1990202821,
+            "currentLine": -1003678230,
+            "nextLine": 45566333,
+            "columns": 0
+          }
+        }
+      ],
+      "projects": []
+    },
+    {
+      "code": "V106",
+      "falseAlarm": false,
+      "level": 2,
+      "message": "Implicit type conversion first argument 'minElementIndex' of function 'at' to memsize type.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 54,
+          "endLine": 54,
+          "file": "|?|\\..\\SAT_DPLL\\branchingstrategy.cpp",
+          "navigation": {
+            "previousLine": 0,
+            "currentLine": -1777960499,
+            "nextLine": 125,
+            "columns": 0
+          }
+        }
+      ],
+      "projects": []
+    },
+    {
+      "analyzedSourceFiles": [
+        "|?|\\..\\SAT_DPLL\\main.cpp"
+      ],
+      "code": "V690",
+      "falseAlarm": false,
+      "level": 2,
+      "message": "The 'NodeBoolTree' class implements a copy constructor, but lacks the copy assignment operator. It is dangerous to use such a class.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 8,
+          "endLine": 8,
+          "file": "|?|\\..\\SAT_DPLL\\NodeBoolTree.h",
+          "navigation": {
+            "previousLine": 0,
+            "currentLine": 4670247,
+            "nextLine": 123,
+            "columns": 0
+          }
+        }
+      ],
+      "projects": []
+    },
+    {
+      "code": "V3551",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "The 'path' array should not decay to a pointer.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 33,
+          "endLine": 33,
+          "file": "|?|\\..\\SAT_DPLL\\main.cpp",
+          "navigation": {
+            "previousLine": 17932753,
+            "currentLine": 1066558547,
+            "nextLine": 722737145,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "AUTOSAR-M5-2-12",
+      "projects": []
+    },
+    {
+      "code": "V3527",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "The return value of non-void function 'GetModuleFileNameA' should be used.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 33,
+          "endLine": 33,
+          "file": "|?|\\..\\SAT_DPLL\\main.cpp",
+          "navigation": {
+            "previousLine": 17932753,
+            "currentLine": 1066558547,
+            "nextLine": 722737145,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "AUTOSAR-A0-1-2",
+      "projects": []
+    },
+    {
+      "code": "V3554",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "The function with the 'remove' name should not be used.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 76,
+          "endLine": 76,
+          "file": "|?|\\..\\SAT_DPLL\\main.cpp",
+          "navigation": {
+            "previousLine": 5913270,
+            "currentLine": 74599667,
+            "nextLine": 1718795254,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "AUTOSAR-M27-0-1",
+      "projects": []
+    },
+    {
+      "code": "V3527",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "The return value of non-void function 'erase' should be used.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 76,
+          "endLine": 76,
+          "file": "|?|\\..\\SAT_DPLL\\main.cpp",
+          "navigation": {
+            "previousLine": 5913270,
+            "currentLine": 74599667,
+            "nextLine": 1718795254,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "AUTOSAR-A0-1-2",
+      "projects": []
+    },
+    {
+      "code": "V108",
+      "falseAlarm": false,
+      "level": 2,
+      "message": "Incorrect index type: CNF[not a memsize-type]. Use memsize type instead.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 91,
+          "endLine": 91,
+          "file": "|?|\\..\\SAT_DPLL\\main.cpp",
+          "navigation": {
+            "previousLine": 2124663921,
+            "currentLine": 2107272130,
+            "nextLine": 285,
+            "columns": 0
+          }
+        }
+      ],
+      "projects": []
+    },
+    {
+      "code": "V2015",
+      "falseAlarm": false,
+      "level": 2,
+      "message": "The 'i' identifier declared in the inner scope hides the identifier declared in the outer scope.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 102,
+          "endLine": 102,
+          "file": "|?|\\..\\SAT_DPLL\\main.cpp",
+          "navigation": {
+            "previousLine": 0,
+            "currentLine": 829328830,
+            "nextLine": 350047,
+            "columns": 0
+          }
+        },
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 89,
+          "endLine": 89,
+          "file": "|?|\\..\\SAT_DPLL\\main.cpp",
+          "navigation": {
+            "previousLine": 0,
+            "currentLine": 0,
+            "nextLine": 0,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "CERT-DCL01-C",
+      "projects": []
+    },
+    {
+      "code": "V3527",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "The return value of non-void function 'SetBranchingStrategy' should be used.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 124,
+          "endLine": 124,
+          "file": "|?|\\..\\SAT_DPLL\\main.cpp",
+          "navigation": {
+            "previousLine": 1499313509,
+            "currentLine": -283894483,
+            "nextLine": -283795923,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "AUTOSAR-A0-1-2",
+      "projects": []
+    },
+    {
+      "code": "V3514",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "The 'switch' statement should have 'default' as the last label.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 163,
+          "endLine": 163,
+          "file": "|?|\\..\\SAT_DPLL\\main.cpp",
+          "navigation": {
+            "previousLine": 0,
+            "currentLine": 45709,
+            "nextLine": 33140,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "AUTOSAR-M6-4-6",
+      "projects": []
+    },
+    {
+      "code": "V826",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "Consider replacing the 'full_file_list' std::list with std::vector. Contiguous placement of elements in memory can be more efficient.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 45,
+          "endLine": 45,
+          "file": "|?|\\..\\SAT_DPLL\\main.cpp",
+          "navigation": {
+            "previousLine": 448821558,
+            "currentLine": -668763044,
+            "nextLine": -751920871,
+            "columns": 0
+          }
+        }
+      ],
+      "projects": []
+    },
+    {
+      "code": "V820",
+      "falseAlarm": false,
+      "level": 2,
+      "message": "The 'rootvec' variable is not used after copying. Copying can be replaced with move/swap for optimization.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 107,
+          "endLine": 107,
+          "file": "|?|\\..\\SAT_DPLL\\main.cpp",
+          "navigation": {
+            "previousLine": 0,
+            "currentLine": -35707651,
+            "nextLine": 8210781,
+            "columns": 0
+          }
+        }
+      ],
+      "projects": []
+    },
+    {
+      "code": "V820",
+      "falseAlarm": false,
+      "level": 2,
+      "message": "The 'rootdnc' variable is not used after copying. Copying can be replaced with move/swap for optimization.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 109,
+          "endLine": 109,
+          "file": "|?|\\..\\SAT_DPLL\\main.cpp",
+          "navigation": {
+            "previousLine": 8210781,
+            "currentLine": -40481117,
+            "nextLine": 8363357,
+            "columns": 0
+          }
+        }
+      ],
+      "projects": []
+    },
+    {
+      "code": "V2537",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "Functions should not have unused parameters. Consider inspecting the parameter: 'argc'.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 37,
+          "endLine": 37,
+          "file": "|?|\\..\\SAT_DPLL\\main.cpp",
+          "navigation": {
+            "previousLine": 0,
+            "currentLine": -1515528703,
+            "nextLine": 0,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-2008-0-1-11",
+      "projects": []
+    },
+    {
+      "code": "V2537",
+      "falseAlarm": false,
+      "level": 1,
+      "message": "Functions should not have unused parameters. Consider inspecting the parameter: 'argv'.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 37,
+          "endLine": 37,
+          "file": "|?|\\..\\SAT_DPLL\\main.cpp",
+          "navigation": {
+            "previousLine": 0,
+            "currentLine": -1515528703,
+            "nextLine": 0,
+            "columns": 0
+          }
+        }
+      ],
+      "sastId": "MISRA-CPP-2008-0-1-11",
+      "projects": []
+    }
+  ]
+}
