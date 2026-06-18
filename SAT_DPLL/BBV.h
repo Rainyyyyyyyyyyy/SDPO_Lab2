@@ -4,15 +4,15 @@
 #include <iostream>
 using namespace std;
 
-typedef unsigned char byte;
+typedef unsigned char bytetype;
 
 class X
 {
-    byte* ptr;//указатель на ячейку, где хранится нужный бит
+    bytetype* ptr;//указатель на ячейку, где хранится нужный бит
     int index;//номер бита в ячейке
 public:
     X();//конструктор по умолчаню
-    X(byte* vec, int k);//конструктор с параметрами
+    X(bytetype* vec, int k);//конструктор с параметрами
     X operator=(int k);//перегрузка оператора присвоения
     operator int();//перегрузка типа
     X operator=(X& v);
@@ -22,7 +22,7 @@ public:
 class BBV
 {
     friend X;
-    byte* vec;//указатель на массив ячеек
+    bytetype* vec;//указатель на массив ячеек
     int size;//количество ячеек
     int len;//количество разрядов
 public:
